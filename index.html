@@ -3,79 +3,968 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Aditya Print | Noorpur</title>
-<meta name="description" content="Aditya Print - T-Shirt, Mug, DTF, Screen Printing, School Uniform Printing और Bulk Orders. Noorpur, Bijnor Road.">
+
+<meta name="description" content="Aditya Print - T-Shirt, Mug, Keychain, Mouse Pad, Cushion, DTF, Screen Printing, School Uniform Printing और Bulk Orders. Noorpur, Bijnor Road.">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f7f9fc;color:#172033;line-height:1.6}
-header{background:#081a3a;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-.logo{font-size:28px;font-weight:800;letter-spacing:1px}.logo span{color:#d6ad55}
-nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:15px}
-.hero{background:linear-gradient(135deg,#081a3a,#123b76);color:white;padding:85px 6%;text-align:center}
-.hero h1{font-size:48px;margin-bottom:10px}.hero h1 span{color:#e5bd65}
-.hero p{font-size:20px;max-width:750px;margin:0 auto 28px;color:#e7edf8}
-.btn{display:inline-block;padding:13px 24px;border-radius:8px;text-decoration:none;font-weight:700;margin:5px}
-.primary{background:#d6ad55;color:#081a3a}.secondary{border:1px solid #fff;color:#fff}
-section{padding:60px 6%;max-width:1200px;margin:auto}
-.title{text-align:center;margin-bottom:35px}.title h2{font-size:32px;color:#081a3a}.title p{color:#667085}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
-.card{background:white;padding:25px;border-radius:14px;box-shadow:0 5px 20px #0000000d;border:1px solid #e8ecf3}
-.card h3{margin:10px 0;color:#123b76}.icon{font-size:38px}
-.bulk{background:#081a3a;color:white;border-radius:18px;padding:40px;text-align:center}
-.bulk h2{font-size:32px;color:#e5bd65;margin-bottom:10px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.contactbox{background:white;padding:30px;border-radius:14px;border:1px solid #e8ecf3}
-.contactbox a{color:#123b76;font-weight:700;text-decoration:none}
-footer{background:#06132b;color:#dfe7f4;text-align:center;padding:28px}
-@media(max-width:700px){nav{display:none}.hero{padding:60px 5%}.hero h1{font-size:36px}.contact{grid-template-columns:1fr}}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f7f9fc;
+  color:#172033;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  background:#081a3a;
+  color:#fff;
+  padding:16px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 3px 15px #0003;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.logo span{
+  color:#d6ad55;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:18px;
+  font-size:15px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:#e5bd65;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#081a3a,#123b76);
+  color:white;
+  padding:90px 6%;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:50px;
+  margin-bottom:12px;
+}
+
+.hero h1 span{
+  color:#e5bd65;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:800px;
+  margin:0 auto 30px;
+  color:#e7edf8;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 24px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  margin:5px;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.primary{
+  background:#d6ad55;
+  color:#081a3a;
+}
+
+.secondary{
+  border:1px solid #fff;
+  color:#fff;
+}
+
+/* SECTIONS */
+section{
+  padding:65px 6%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:38px;
+}
+
+.title h2{
+  font-size:34px;
+  color:#081a3a;
+  margin-bottom:6px;
+}
+
+.title p{
+  color:#667085;
+}
+
+/* SERVICE GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 5px 20px #0000000d;
+  border:1px solid #e8ecf3;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px #00000018;
+}
+
+.card h3{
+  margin:10px 0;
+  color:#123b76;
+}
+
+.card p{
+  color:#667085;
+}
+
+.icon{
+  font-size:40px;
+}
+
+/* PRODUCTS */
+.product-card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid #e5e9f0;
+  box-shadow:0 5px 20px #0000000d;
+  transition:.2s;
+  text-align:center;
+}
+
+.product-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px #00000018;
+}
+
+.product-image{
+  height:170px;
+  background:linear-gradient(135deg,#eef3fb,#dce7f7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:75px;
+}
+
+.product-info{
+  padding:20px;
+}
+
+.product-info h3{
+  color:#123b76;
+  margin-bottom:6px;
+}
+
+.product-info p{
+  color:#667085;
+  font-size:14px;
+  margin-bottom:14px;
+}
+
+.order-btn{
+  display:inline-block;
+  background:#081a3a;
+  color:white;
+  padding:9px 16px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.gallery-item{
+  background:white;
+  border:1px solid #e5e9f0;
+  border-radius:14px;
+  padding:35px 15px;
+  text-align:center;
+  min-height:180px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  box-shadow:0 5px 18px #0000000b;
+}
+
+.gallery-item .big-icon{
+  font-size:65px;
+  margin-bottom:8px;
+}
+
+.gallery-item h3{
+  color:#123b76;
+}
+
+/* BULK */
+.bulk{
+  background:#081a3a;
+  color:white;
+  border-radius:18px;
+  padding:45px 25px;
+  text-align:center;
+}
+
+.bulk h2{
+  font-size:34px;
+  color:#e5bd65;
+  margin-bottom:10px;
+}
+
+.bulk p{
+  color:#e7edf8;
+  max-width:700px;
+  margin:auto;
+}
+
+/* WHY US */
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.why{
+  background:white;
+  border:1px solid #e8ecf3;
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
+}
+
+.why strong{
+  display:block;
+  color:#123b76;
+  font-size:18px;
+  margin-top:8px;
+}
+
+/* CONTACT */
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.contactbox{
+  background:white;
+  padding:30px;
+  border-radius:14px;
+  border:1px solid #e8ecf3;
+}
+
+.contactbox h3{
+  color:#123b76;
+  margin-bottom:10px;
+}
+
+.contactbox a{
+  color:#123b76;
+  font-weight:700;
+  text-decoration:none;
+}
+
+/* FINAL CTA */
+.final-cta{
+  background:linear-gradient(135deg,#123b76,#081a3a);
+  color:white;
+  text-align:center;
+  padding:55px 6%;
+}
+
+.final-cta h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.final-cta p{
+  margin-bottom:20px;
+  color:#e7edf8;
+}
+
+/* FOOTER */
+footer{
+  background:#06132b;
+  color:#dfe7f4;
+  text-align:center;
+  padding:28px 15px;
+}
+
+footer strong{
+  color:#e5bd65;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+
+  header{
+    padding:14px 5%;
+  }
+
+  .logo{
+    font-size:23px;
+  }
+
+  nav a{
+    margin-left:8px;
+    font-size:12px;
+  }
+
+  .hero{
+    padding:65px 5%;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  section{
+    padding:50px 5%;
+  }
+
+  .title h2{
+    font-size:29px;
+  }
+
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  .bulk h2{
+    font-size:29px;
+  }
+}
+
+@media(max-width:520px){
+
+  nav{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .btn{
+    width:90%;
+    max-width:320px;
+  }
+
+  .product-image{
+    height:150px;
+  }
+}
 </style>
 </head>
+
 <body>
+
+<!-- HEADER -->
 <header>
-<div class="logo">ADITYA <span>PRINT</span></div>
+
+<div class="logo">
+ADITYA <span>PRINT</span>
+</div>
+
 <nav>
-<a href="#services">Services</a><a href="#bulk">Bulk Orders</a><a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#products">Catalog</a>
+<a href="#gallery">Gallery</a>
+<a href="#bulk">Bulk Orders</a>
+<a href="#contact">Contact</a>
 </nav>
+
 </header>
 
-<div class="hero">
-<h1>ADITYA <span>PRINT</span></h1>
-<p>Custom Printing & Branding Solutions — T-Shirt, Mug, DTF, Screen Printing और School Uniform Printing.</p>
-<a class="btn primary" href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20printing%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank">WhatsApp पर ऑर्डर करें</a>
-<a class="btn secondary" href="tel:+919568618658">📞 कॉल करें</a>
+
+<!-- HOME -->
+<div class="hero" id="home">
+
+<h1>
+ADITYA <span>PRINT</span>
+</h1>
+
+<p>
+Custom Printing & Branding Solutions —
+T-Shirt, Mug, Keychain, Mouse Pad, Cushion,
+DTF, Screen Printing और School Uniform Printing.
+</p>
+
+<a class="btn primary"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20printing%20ke%20baare%20mein%20jaankari%20chahiye."
+target="_blank">
+💬 WhatsApp पर Order करें
+</a>
+
+<a class="btn secondary"
+href="tel:+919568618658">
+📞 Call करें
+</a>
+
 </div>
 
+
+<!-- SERVICES -->
 <section id="services">
-<div class="title"><h2>हमारी Services</h2><p>Personal, Business और Bulk Printing के लिए संपर्क करें।</p></div>
+
+<div class="title">
+
+<h2>हमारी Services</h2>
+
+<p>
+Personal, Business और Bulk Printing के लिए संपर्क करें।
+</p>
+
+</div>
+
+
 <div class="grid">
-<div class="card"><div class="icon">👕</div><h3>T-Shirt Printing</h3><p>Custom design और event/team T-shirt printing.</p></div>
-<div class="card"><div class="icon">☕</div><h3>Mug Printing</h3><p>Personalized photo और gift mug printing.</p></div>
-<div class="card"><div class="icon">🖨️</div><h3>DTF Printing</h3><p>Custom apparel printing के लिए DTF solutions.</p></div>
-<div class="card"><div class="icon">🎨</div><h3>Screen Printing</h3><p>Bulk और regular printing requirements.</p></div>
-<div class="card"><div class="icon">🏫</div><h3>School Uniform Printing</h3><p>School और institution requirements के लिए printing.</p></div>
-<div class="card"><div class="icon">📦</div><h3>Bulk Orders</h3><p>Events, teams, schools और businesses के bulk orders.</p></div>
+
+<div class="card">
+<div class="icon">👕</div>
+<h3>T-Shirt Printing</h3>
+<p>
+Custom design, event, team और promotional T-shirt printing.
+</p>
 </div>
+
+
+<div class="card">
+<div class="icon">☕</div>
+<h3>Mug Printing</h3>
+<p>
+Photo, name और personalized gift mug printing.
+</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🔑</div>
+<h3>Keychain Printing</h3>
+<p>
+Personalized और promotional keychain printing.
+</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🖱️</div>
+<h3>Mouse Pad</h3>
+<p>
+Custom photo और logo mouse pad printing.
+</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🛏️</div>
+<h3>Cushion Printing</h3>
+<p>
+Photo और custom design cushion printing.
+</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🖨️</div>
+<h3>DTF Printing</h3>
+<p>
+Custom apparel printing के लिए DTF solutions.
+</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>Screen Printing</h3>
+<p>
+Bulk और regular printing requirements.
+</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🏫</div>
+<h3>School Uniform Printing</h3>
+<p>
+Schools और institutions के लिए printing solutions.
+</p>
+</div>
+
+</div>
+
 </section>
 
+
+<!-- PRODUCT CATALOG -->
+<section id="products">
+
+<div class="title">
+
+<h2>🛍️ Product Catalog</h2>
+
+<p>
+अपने पसंदीदा product के लिए WhatsApp पर design भेजें।
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="product-card">
+
+<div class="product-image">
+👕
+</div>
+
+<div class="product-info">
+
+<h3>Custom T-Shirt</h3>
+
+<p>
+Photo, Name, Logo और Custom Design
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Custom%20T-Shirt%20ke%20liye%20order%20karna%20hai."
+target="_blank">
+Order करें →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+☕
+</div>
+
+<div class="product-info">
+
+<h3>Photo Mug</h3>
+
+<p>
+Personalized Photo और Gift Mug
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Photo%20Mug%20order%20karna%20hai."
+target="_blank">
+Order करें →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+🔑
+</div>
+
+<div class="product-info">
+
+<h3>Custom Keychain</h3>
+
+<p>
+Name, Photo और Logo Keychain
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Custom%20Keychain%20order%20karna%20hai."
+target="_blank">
+Order करें →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+🖱️
+</div>
+
+<div class="product-info">
+
+<h3>Custom Mouse Pad</h3>
+
+<p>
+Photo और Logo Mouse Pad
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Custom%20Mouse%20Pad%20order%20karna%20hai."
+target="_blank">
+Order करें →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+🛏️
+</div>
+
+<div class="product-info">
+
+<h3>Photo Cushion</h3>
+
+<p>
+Custom Photo और Design Cushion
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Photo%20Cushion%20order%20karna%20hai."
+target="_blank">
+Order करें →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+🎨
+</div>
+
+<div class="product-info">
+
+<h3>DTF / Screen Printing</h3>
+
+<p>
+Business, Team और Bulk Orders
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20DTF%20ya%20Screen%20Printing%20ke%20liye%20quotation%20chahiye."
+target="_blank">
+Quotation लें →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+
+<div class="title">
+
+<h2>🖼️ Our Catalog Gallery</h2>
+
+<p>
+Aditya Print के custom products और printing work
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+
+<div class="gallery-item">
+<div class="big-icon">👕</div>
+<h3>T-Shirt Printing</h3>
+</div>
+
+
+<div class="gallery-item">
+<div class="big-icon">☕</div>
+<h3>Mug Printing</h3>
+</div>
+
+
+<div class="gallery-item">
+<div class="big-icon">🔑</div>
+<h3>Keychain</h3>
+</div>
+
+
+<div class="gallery-item">
+<div class="big-icon">🖱️</div>
+<h3>Mouse Pad</h3>
+</div>
+
+
+<div class="gallery-item">
+<div class="big-icon">🛏️</div>
+<h3>Cushion Printing</h3>
+</div>
+
+
+<div class="gallery-item">
+<div class="big-icon">🎨</div>
+<h3>Custom Printing</h3>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- BULK ORDERS -->
 <section id="bulk">
+
 <div class="bulk">
-<h2>Bulk Order चाहिए?</h2>
-<p>अपनी quantity और design की जानकारी WhatsApp पर भेजें।</p>
-<a class="btn primary" href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20bulk%20printing%20order%20ke%20liye%20quotation%20chahiye." target="_blank">Bulk Order के लिए WhatsApp करें</a>
+
+<h2>📦 Bulk Order चाहिए?</h2>
+
+<p>
+School, College, Team, Event, Business,
+Shop, Company या किसी भी कार्यक्रम के लिए
+Bulk Printing Order स्वीकार किए जाते हैं।
+</p>
+
+<br>
+
+<a class="btn primary"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20bulk%20printing%20order%20ke%20liye%20quotation%20chahiye."
+target="_blank">
+💬 Bulk Order के लिए WhatsApp करें
+</a>
+
 </div>
+
 </section>
 
+
+<!-- WHY ADITYA PRINT -->
+<section>
+
+<div class="title">
+
+<h2>⭐ Aditya Print क्यों?</h2>
+
+<p>
+आपके custom printing काम के लिए एक ही जगह।
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why">
+<div class="icon">🎨</div>
+<strong>Custom Design</strong>
+<p>आपके design के अनुसार printing.</p>
+</div>
+
+
+<div class="why">
+<div class="icon">📦</div>
+<strong>Bulk Orders</strong>
+<p>Events, schools और businesses के लिए.</p>
+</div>
+
+
+<div class="why">
+<div class="icon">📱</div>
+<strong>Easy WhatsApp Order</strong>
+<p>Design WhatsApp पर भेजें.</p>
+</div>
+
+
+<div class="why">
+<div class="icon">📍</div>
+<strong>Local Service</strong>
+<p>Noorpur में local printing service.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
 <section id="contact">
-<div class="title"><h2>Contact करें</h2><p>ऑर्डर और जानकारी के लिए सीधे संपर्क करें।</p></div>
-<div class="contact">
-<div class="contactbox"><h3>📍 हमारा Address</h3><p>NOORPUR Nahtor Chauraha,<br>Bijnor Road</p></div>
-<div class="contactbox"><h3>📱 Call / WhatsApp</h3><p><a href="tel:+919568618658">9568618658</a></p><p><a href="https://wa.me/919568618658" target="_blank">WhatsApp पर बात करें →</a></p></div>
+
+<div class="title">
+
+<h2>📞 Contact करें</h2>
+
+<p>
+Order और जानकारी के लिए सीधे संपर्क करें।
+</p>
+
 </div>
+
+
+<div class="contact">
+
+
+<div class="contactbox">
+
+<h3>📍 हमारा Address</h3>
+
+<p>
+NOORPUR Nahtor Chauraha,<br>
+Bijnor Road
+</p>
+
+<br>
+
+<a class="btn primary"
+href="https://www.google.com/maps/search/?api=1&query=NOORPUR%20Nahtor%20Chauraha%2C%20Bijnor%20Road"
+target="_blank">
+📍 Google Maps पर देखें
+</a>
+
+</div>
+
+
+<div class="contactbox">
+
+<h3>📱 Call / WhatsApp</h3>
+
+<p>
+<a href="tel:+919568618658">
+9568618658
+</a>
+</p>
+
+<br>
+
+<a class="btn primary"
+href="https://wa.me/919568618658"
+target="_blank">
+💬 WhatsApp पर बात करें →
+</a>
+
+</div>
+
+
+</div>
+
 </section>
 
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+
+<h2>अपना Design भेजिए, Printing हम करेंगे! 🎨</h2>
+
+<p>
+T-Shirt • Mug • Keychain • Mouse Pad • Cushion • DTF • Screen Printing
+</p>
+
+<a class="btn primary"
+href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20printing%20order%20ke%20liye%20jaankari%20chahiye."
+target="_blank">
+💬 WhatsApp पर बात करें
+</a>
+
+<a class="btn secondary"
+href="tel:+919568618658">
+📞 अभी Call करें
+</a>
+
+</div>
+
+
+<!-- FOOTER -->
 <footer>
-<p><strong>ADITYA PRINT</strong> — Printing & Branding Solutions</p>
-<p>© 2026 Aditya Print. All Rights Reserved.</p>
+
+<p>
+<strong>ADITYA PRINT</strong>
+— Printing & Branding Solutions
+</p>
+
+<p>
+NOORPUR Nahtor Chauraha, Bijnor Road
+</p>
+
+<p>
+📞 9568618658
+</p>
+
+<p>
+© 2026 Aditya Print. All Rights Reserved.
+</p>
+
 </footer>
+
+
 </body>
-</html>
+  </html>
