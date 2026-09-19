@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Aditya Print | Noorpur</title>
+<title>Aditya Print | Online Printing Store</title>
 
-<meta name="description" content="Aditya Print - T-Shirt, Mug, Keychain, Mouse Pad, Cushion, DTF, Screen Printing, School Uniform Printing और Bulk Orders. Noorpur, Bijnor Road.">
+<meta name="description" content="Aditya Print - Custom T-Shirt, Mug, Keychain, Mouse Pad, Cushion और Printing Products. Noorpur, Bijnor Road.">
 
 <style>
 *{
@@ -20,837 +20,1256 @@ html{
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f7f9fc;
+  font-family:Arial, sans-serif;
+  background:#f5f6f8;
   color:#172033;
-  line-height:1.6;
+  padding-bottom:70px;
 }
 
-/* HEADER */
-header{
+a{
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+  cursor:pointer;
+}
+
+/* TOP HEADER */
+
+.top{
   background:#081a3a;
-  color:#fff;
-  padding:16px 6%;
+  color:white;
+  padding:8px 6%;
+  font-size:13px;
   display:flex;
   justify-content:space-between;
+}
+
+.header{
+  background:#123b76;
+  color:white;
+  padding:14px 5%;
+  display:flex;
   align-items:center;
+  gap:25px;
   position:sticky;
   top:0;
   z-index:1000;
-  box-shadow:0 3px 15px #0003;
+  box-shadow:0 2px 10px #0003;
 }
 
 .logo{
-  font-size:28px;
-  font-weight:800;
-  letter-spacing:1px;
+  font-size:27px;
+  font-weight:bold;
+  white-space:nowrap;
 }
 
 .logo span{
-  color:#d6ad55;
+  color:#ffd45c;
 }
 
-nav a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:18px;
+.search{
+  flex:1;
+  display:flex;
+  max-width:650px;
+}
+
+.search input{
+  width:100%;
+  padding:13px 16px;
+  border:0;
+  outline:0;
   font-size:15px;
-  font-weight:600;
+  border-radius:6px 0 0 6px;
 }
 
-nav a:hover{
-  color:#e5bd65;
+.search button{
+  width:55px;
+  border:0;
+  background:#ffd45c;
+  color:#081a3a;
+  font-size:20px;
+  border-radius:0 6px 6px 0;
+}
+
+.header-links{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+
+.header-links a{
+  color:white;
+  font-size:14px;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+.cart-count{
+  background:#ff3b30;
+  color:white;
+  border-radius:20px;
+  padding:2px 7px;
+  font-size:11px;
+  vertical-align:top;
 }
 
 /* HERO */
+
 .hero{
-  background:linear-gradient(135deg,#081a3a,#123b76);
+  background:linear-gradient(135deg,#081a3a,#1d4f92);
   color:white;
-  padding:90px 6%;
-  text-align:center;
+  padding:55px 6%;
 }
 
-.hero h1{
-  font-size:50px;
-  margin-bottom:12px;
-}
-
-.hero h1 span{
-  color:#e5bd65;
-}
-
-.hero p{
-  font-size:20px;
-  max-width:800px;
-  margin:0 auto 30px;
-  color:#e7edf8;
-}
-
-.btn{
-  display:inline-block;
-  padding:13px 24px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:700;
-  margin:5px;
-  transition:.2s;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-.primary{
-  background:#d6ad55;
-  color:#081a3a;
-}
-
-.secondary{
-  border:1px solid #fff;
-  color:#fff;
-}
-
-/* SECTIONS */
-section{
-  padding:65px 6%;
+.hero-inner{
   max-width:1200px;
   margin:auto;
 }
 
-.title{
-  text-align:center;
-  margin-bottom:38px;
+.hero h1{
+  font-size:45px;
+  margin-bottom:10px;
 }
 
-.title h2{
-  font-size:34px;
-  color:#081a3a;
-  margin-bottom:6px;
+.hero h1 span{
+  color:#ffd45c;
 }
 
-.title p{
-  color:#667085;
+.hero p{
+  font-size:18px;
+  max-width:700px;
+  color:#e6edf8;
+  margin-bottom:22px;
 }
 
-/* SERVICE GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:white;
-  padding:25px;
-  border-radius:14px;
-  box-shadow:0 5px 20px #0000000d;
-  border:1px solid #e8ecf3;
-  transition:.2s;
-}
-
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 10px 25px #00000018;
-}
-
-.card h3{
-  margin:10px 0;
-  color:#123b76;
-}
-
-.card p{
-  color:#667085;
-}
-
-.icon{
-  font-size:40px;
-}
-
-/* PRODUCTS */
-.product-card{
-  background:#fff;
-  border-radius:16px;
-  overflow:hidden;
-  border:1px solid #e5e9f0;
-  box-shadow:0 5px 20px #0000000d;
-  transition:.2s;
-  text-align:center;
-}
-
-.product-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 10px 25px #00000018;
-}
-
-.product-image{
-  height:170px;
-  background:linear-gradient(135deg,#eef3fb,#dce7f7);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:75px;
-}
-
-.product-info{
-  padding:20px;
-}
-
-.product-info h3{
-  color:#123b76;
-  margin-bottom:6px;
-}
-
-.product-info p{
-  color:#667085;
-  font-size:14px;
-  margin-bottom:14px;
-}
-
-.order-btn{
+.btn{
   display:inline-block;
-  background:#081a3a;
-  color:white;
-  padding:9px 16px;
+  border:0;
   border-radius:7px;
-  text-decoration:none;
+  padding:12px 20px;
   font-weight:bold;
 }
 
-/* GALLERY */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+.yellow{
+  background:#ffd45c;
+  color:#081a3a;
 }
 
-.gallery-item{
+.white{
   background:white;
-  border:1px solid #e5e9f0;
-  border-radius:14px;
-  padding:35px 15px;
-  text-align:center;
-  min-height:180px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  box-shadow:0 5px 18px #0000000b;
-}
-
-.gallery-item .big-icon{
-  font-size:65px;
-  margin-bottom:8px;
-}
-
-.gallery-item h3{
   color:#123b76;
 }
 
-/* BULK */
-.bulk{
-  background:#081a3a;
+/* CATEGORIES */
+
+.container{
+  max-width:1250px;
+  margin:auto;
+  padding:35px 5%;
+}
+
+.heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.heading h2{
+  color:#081a3a;
+}
+
+.categories{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  padding-bottom:8px;
+}
+
+.category{
+  min-width:125px;
+  background:white;
+  border:1px solid #e2e5ea;
+  border-radius:10px;
+  padding:16px 10px;
+  text-align:center;
+  font-weight:bold;
+  color:#123b76;
+  box-shadow:0 2px 8px #0000000a;
+}
+
+.category div{
+  font-size:30px;
+  margin-bottom:5px;
+}
+
+/* PRODUCT GRID */
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.product{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid #e2e5ea;
+  position:relative;
+  transition:.2s;
+}
+
+.product:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 22px #0002;
+}
+
+.wish{
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:0;
+  background:white;
+  box-shadow:0 2px 8px #0003;
+  font-size:19px;
+  z-index:2;
+}
+
+.product-img{
+  height:210px;
+  background:linear-gradient(135deg,#eaf0f8,#dce7f5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:90px;
+}
+
+.product-info{
+  padding:16px;
+}
+
+.product-info h3{
+  color:#172033;
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.rating{
+  font-size:13px;
+  color:#087a32;
+  margin-bottom:8px;
+}
+
+.price{
+  font-size:21px;
+  font-weight:bold;
+  color:#081a3a;
+  margin:5px 0;
+}
+
+.old{
+  color:#888;
+  text-decoration:line-through;
+  font-size:13px;
+  margin-left:5px;
+}
+
+.product-info small{
+  color:#667085;
+}
+
+.actions{
+  display:flex;
+  gap:8px;
+  margin-top:13px;
+}
+
+.add{
+  flex:1;
+  background:#ffd45c;
+  color:#081a3a;
+  border:0;
+  padding:10px 5px;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.buy{
+  flex:1;
+  background:#123b76;
   color:white;
-  border-radius:18px;
-  padding:45px 25px;
+  border:0;
+  padding:10px 5px;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+/* FEATURES */
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.feature{
+  background:white;
+  padding:22px 15px;
+  text-align:center;
+  border-radius:10px;
+  border:1px solid #e2e5ea;
+}
+
+.feature-icon{
+  font-size:32px;
+}
+
+.feature strong{
+  display:block;
+  color:#123b76;
+  margin-top:7px;
+}
+
+/* BULK */
+
+.bulk{
+  background:linear-gradient(135deg,#081a3a,#123b76);
+  color:white;
+  border-radius:14px;
+  padding:40px;
   text-align:center;
 }
 
 .bulk h2{
-  font-size:34px;
-  color:#e5bd65;
-  margin-bottom:10px;
+  color:#ffd45c;
+  margin-bottom:8px;
 }
 
-.bulk p{
-  color:#e7edf8;
-  max-width:700px;
-  margin:auto;
+/* CART */
+
+.cart-box{
+  background:white;
+  border-radius:12px;
+  padding:22px;
+  border:1px solid #e2e5ea;
 }
 
-/* WHY US */
-.why-grid{
+.cart-item{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  border-bottom:1px solid #eee;
+  padding:15px 0;
+}
+
+.cart-icon{
+  width:65px;
+  height:65px;
+  background:#edf2f8;
+  border-radius:8px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:35px;
+}
+
+.cart-details{
+  flex:1;
+}
+
+.cart-details h3{
+  color:#123b76;
+}
+
+.qty{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:5px;
+}
+
+.qty button{
+  width:28px;
+  height:28px;
+  border:1px solid #ccc;
+  background:white;
+  border-radius:5px;
+}
+
+.remove{
+  border:0;
+  background:none;
+  color:#d22;
+  font-size:13px;
+}
+
+.cart-total{
+  text-align:right;
+  font-size:23px;
+  font-weight:bold;
+  margin-top:20px;
+  color:#081a3a;
+}
+
+/* CHECKOUT */
+
+.checkout{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:1fr 1fr;
   gap:20px;
 }
 
-.why{
+.form{
   background:white;
-  border:1px solid #e8ecf3;
   padding:25px;
-  border-radius:14px;
-  text-align:center;
+  border-radius:12px;
+  border:1px solid #e2e5ea;
 }
 
-.why strong{
-  display:block;
-  color:#123b76;
-  font-size:18px;
-  margin-top:8px;
+.form h2{
+  color:#081a3a;
+  margin-bottom:15px;
+}
+
+.form input,
+.form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  border:1px solid #ccd2da;
+  border-radius:6px;
+  outline:0;
+}
+
+.form textarea{
+  height:100px;
+  resize:vertical;
+}
+
+.whatsapp{
+  width:100%;
+  padding:13px;
+  border:0;
+  border-radius:7px;
+  background:#19a95b;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
 }
 
 /* CONTACT */
+
 .contact{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:25px;
+  gap:20px;
 }
 
-.contactbox{
+.contact-card{
   background:white;
-  padding:30px;
-  border-radius:14px;
-  border:1px solid #e8ecf3;
+  padding:25px;
+  border-radius:12px;
+  border:1px solid #e2e5ea;
 }
 
-.contactbox h3{
+.contact-card h3{
   color:#123b76;
-  margin-bottom:10px;
+  margin-bottom:8px;
 }
 
-.contactbox a{
+.contact-card a{
   color:#123b76;
-  font-weight:700;
-  text-decoration:none;
-}
-
-/* FINAL CTA */
-.final-cta{
-  background:linear-gradient(135deg,#123b76,#081a3a);
-  color:white;
-  text-align:center;
-  padding:55px 6%;
-}
-
-.final-cta h2{
-  font-size:32px;
-  margin-bottom:10px;
-}
-
-.final-cta p{
-  margin-bottom:20px;
-  color:#e7edf8;
+  font-weight:bold;
 }
 
 /* FOOTER */
+
 footer{
   background:#06132b;
-  color:#dfe7f4;
+  color:#dce5f3;
   text-align:center;
-  padding:28px 15px;
+  padding:30px 15px;
 }
 
 footer strong{
-  color:#e5bd65;
+  color:#ffd45c;
 }
 
-/* MOBILE */
-@media(max-width:800px){
+/* MOBILE BOTTOM NAV */
 
-  header{
-    padding:14px 5%;
+.mobile-nav{
+  display:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+
+  .products{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .features{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .header-links{
+    display:none;
+  }
+
+}
+
+@media(max-width:700px){
+
+  .top{
+    display:none;
+  }
+
+  .header{
+    flex-wrap:wrap;
+    gap:10px;
+    padding:12px 4%;
   }
 
   .logo{
-    font-size:23px;
+    font-size:22px;
   }
 
-  nav a{
-    margin-left:8px;
-    font-size:12px;
+  .search{
+    order:3;
+    flex-basis:100%;
   }
 
   .hero{
-    padding:65px 5%;
-  }
-
-  .hero h1{
-    font-size:38px;
-  }
-
-  .hero p{
-    font-size:17px;
-  }
-
-  section{
-    padding:50px 5%;
-  }
-
-  .title h2{
-    font-size:29px;
-  }
-
-  .contact{
-    grid-template-columns:1fr;
-  }
-
-  .bulk h2{
-    font-size:29px;
-  }
-}
-
-@media(max-width:520px){
-
-  nav{
-    display:none;
+    padding:40px 5%;
   }
 
   .hero h1{
     font-size:34px;
   }
 
-  .btn{
-    width:90%;
-    max-width:320px;
+  .hero p{
+    font-size:16px;
   }
 
-  .product-image{
-    height:150px;
+  .products{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
   }
+
+  .product-img{
+    height:145px;
+    font-size:65px;
+  }
+
+  .product-info{
+    padding:12px;
+  }
+
+  .product-info h3{
+    font-size:15px;
+  }
+
+  .price{
+    font-size:18px;
+  }
+
+  .actions{
+    flex-direction:column;
+  }
+
+  .features{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .checkout,
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  .bulk{
+    padding:30px 18px;
+  }
+
+  .mobile-nav{
+    position:fixed;
+    display:flex;
+    bottom:0;
+    left:0;
+    right:0;
+    height:62px;
+    background:white;
+    border-top:1px solid #ddd;
+    z-index:2000;
+    justify-content:space-around;
+    box-shadow:0 -3px 15px #0002;
+  }
+
+  .mobile-nav a{
+    flex:1;
+    text-align:center;
+    padding-top:8px;
+    color:#555;
+    font-size:12px;
+    font-weight:bold;
+  }
+
+  .mobile-nav span{
+    display:block;
+    font-size:21px;
+  }
+
+}
+
+@media(max-width:400px){
+
+  .products{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .product-img{
+    height:125px;
+  }
+
+  .features{
+    grid-template-columns:1fr 1fr;
+  }
+
 }
 </style>
 </head>
 
 <body>
 
+
+<!-- TOP BAR -->
+
+<div class="top">
+<span>Aditya Print — Noorpur, Bijnor Road</span>
+<span>📞 9568618658</span>
+</div>
+
+
 <!-- HEADER -->
-<header>
+
+<header class="header">
 
 <div class="logo">
 ADITYA <span>PRINT</span>
 </div>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#products">Catalog</a>
-<a href="#gallery">Gallery</a>
-<a href="#bulk">Bulk Orders</a>
-<a href="#contact">Contact</a>
-</nav>
+
+<div class="search">
+
+<input
+id="searchInput"
+type="text"
+placeholder="Search T-Shirt, Mug, Keychain..."
+onkeyup="searchProducts()">
+
+<button onclick="searchProducts()">🔍</button>
+
+</div>
+
+
+<div class="header-links">
+
+<a href="#wishlist">❤️ Wishlist</a>
+
+<a href="#cart">
+🛒 Cart
+<span id="cartCount" class="cart-count">0</span>
+</a>
+
+</div>
 
 </header>
 
 
-<!-- HOME -->
-<div class="hero" id="home">
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-inner">
 
 <h1>
-ADITYA <span>PRINT</span>
+Welcome to ADITYA <span>PRINT</span>
 </h1>
 
 <p>
-Custom Printing & Branding Solutions —
-T-Shirt, Mug, Keychain, Mouse Pad, Cushion,
-DTF, Screen Printing और School Uniform Printing.
+Custom T-Shirt, Mug, Keychain, Mouse Pad,
+Cushion और Printing Products — अब Online Order करें।
 </p>
 
-<a class="btn primary"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20printing%20ke%20baare%20mein%20jaankari%20chahiye."
+<a class="btn yellow" href="#products">
+🛍️ Shop Now
+</a>
+
+<a class="btn white"
+href="https://wa.me/919568618658"
 target="_blank">
-💬 WhatsApp पर Order करें
+💬 WhatsApp
 </a>
-
-<a class="btn secondary"
-href="tel:+919568618658">
-📞 Call करें
-</a>
-
-</div>
-
-
-<!-- SERVICES -->
-<section id="services">
-
-<div class="title">
-
-<h2>हमारी Services</h2>
-
-<p>
-Personal, Business और Bulk Printing के लिए संपर्क करें।
-</p>
-
-</div>
-
-
-<div class="grid">
-
-<div class="card">
-<div class="icon">👕</div>
-<h3>T-Shirt Printing</h3>
-<p>
-Custom design, event, team और promotional T-shirt printing.
-</p>
-</div>
-
-
-<div class="card">
-<div class="icon">☕</div>
-<h3>Mug Printing</h3>
-<p>
-Photo, name और personalized gift mug printing.
-</p>
-</div>
-
-
-<div class="card">
-<div class="icon">🔑</div>
-<h3>Keychain Printing</h3>
-<p>
-Personalized और promotional keychain printing.
-</p>
-</div>
-
-
-<div class="card">
-<div class="icon">🖱️</div>
-<h3>Mouse Pad</h3>
-<p>
-Custom photo और logo mouse pad printing.
-</p>
-</div>
-
-
-<div class="card">
-<div class="icon">🛏️</div>
-<h3>Cushion Printing</h3>
-<p>
-Photo और custom design cushion printing.
-</p>
-</div>
-
-
-<div class="card">
-<div class="icon">🖨️</div>
-<h3>DTF Printing</h3>
-<p>
-Custom apparel printing के लिए DTF solutions.
-</p>
-</div>
-
-
-<div class="card">
-<div class="icon">🎨</div>
-<h3>Screen Printing</h3>
-<p>
-Bulk और regular printing requirements.
-</p>
-</div>
-
-
-<div class="card">
-<div class="icon">🏫</div>
-<h3>School Uniform Printing</h3>
-<p>
-Schools और institutions के लिए printing solutions.
-</p>
-</div>
 
 </div>
 
 </section>
 
 
-<!-- PRODUCT CATALOG -->
-<section id="products">
+<!-- CATEGORIES -->
 
-<div class="title">
+<div class="container">
 
-<h2>🛍️ Product Catalog</h2>
+<div class="heading">
+<h2>Shop by Category</h2>
+</div>
 
-<p>
-अपने पसंदीदा product के लिए WhatsApp पर design भेजें।
-</p>
+<div class="categories">
+
+<a class="category" href="#products" onclick="filterCategory('T-Shirt')">
+<div>👕</div>
+T-Shirt
+</a>
+
+<a class="category" href="#products" onclick="filterCategory('Mug')">
+<div>☕</div>
+Mug
+</a>
+
+<a class="category" href="#products" onclick="filterCategory('Keychain')">
+<div>🔑</div>
+Keychain
+</a>
+
+<a class="category" href="#products" onclick="filterCategory('Mouse Pad')">
+<div>🖱️</div>
+Mouse Pad
+</a>
+
+<a class="category" href="#products" onclick="filterCategory('Cushion')">
+<div>🛏️</div>
+Cushion
+</a>
+
+<a class="category" href="#products" onclick="filterCategory('Printing')">
+<div>🎨</div>
+Printing
+</a>
+
+</div>
 
 </div>
 
 
-<div class="grid">
+<!-- FEATURES -->
 
+<div class="container">
 
-<div class="product-card">
+<div class="features">
 
-<div class="product-image">
-👕
+<div class="feature">
+<div class="feature-icon">🚚</div>
+<strong>Local Service</strong>
+<small>Noorpur में</small>
 </div>
+
+<div class="feature">
+<div class="feature-icon">🎨</div>
+<strong>Custom Design</strong>
+<small>आपका Design</small>
+</div>
+
+<div class="feature">
+<div class="feature-icon">📦</div>
+<strong>Bulk Orders</strong>
+<small>Business & Events</small>
+</div>
+
+<div class="feature">
+<div class="feature-icon">💬</div>
+<strong>WhatsApp Order</strong>
+<small>Easy Ordering</small>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<section class="container" id="products">
+
+<div class="heading">
+
+<h2>🛍️ Popular Products</h2>
+
+<button
+class="btn yellow"
+onclick="showAllProducts()">
+All Products
+</button>
+
+</div>
+
+
+<div class="products" id="productGrid">
+
+
+<!-- T SHIRT -->
+
+<div class="product" data-name="Custom T-Shirt" data-category="T-Shirt" data-price="299">
+
+<button class="wish" onclick="toggleWish('Custom T-Shirt')">♡</button>
+
+<div class="product-img">👕</div>
 
 <div class="product-info">
 
 <h3>Custom T-Shirt</h3>
 
-<p>
-Photo, Name, Logo और Custom Design
-</p>
+<div class="rating">⭐ 4.8 | Custom Print</div>
 
-<a class="order-btn"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Custom%20T-Shirt%20ke%20liye%20order%20karna%20hai."
-target="_blank">
-Order करें →
-</a>
+<div class="price">
+₹299
+<span class="old">₹399</span>
+</div>
+
+<small>Photo / Name / Logo</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('Custom T-Shirt',299,'👕')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('Custom T-Shirt',299,'👕')">
+Buy Now
+</button>
 
 </div>
 
 </div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-☕
 </div>
+
+
+<!-- MUG -->
+
+<div class="product" data-name="Photo Mug" data-category="Mug" data-price="199">
+
+<button class="wish" onclick="toggleWish('Photo Mug')">♡</button>
+
+<div class="product-img">☕</div>
 
 <div class="product-info">
 
 <h3>Photo Mug</h3>
 
-<p>
-Personalized Photo और Gift Mug
-</p>
+<div class="rating">⭐ 4.9 | Personalized</div>
 
-<a class="order-btn"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Photo%20Mug%20order%20karna%20hai."
-target="_blank">
-Order करें →
-</a>
+<div class="price">
+₹199
+<span class="old">₹249</span>
+</div>
+
+<small>Photo / Name / Gift</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('Photo Mug',199,'☕')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('Photo Mug',199,'☕')">
+Buy Now
+</button>
 
 </div>
 
 </div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-🔑
 </div>
+
+
+<!-- KEYCHAIN -->
+
+<div class="product" data-name="Custom Keychain" data-category="Keychain" data-price="99">
+
+<button class="wish" onclick="toggleWish('Custom Keychain')">♡</button>
+
+<div class="product-img">🔑</div>
 
 <div class="product-info">
 
 <h3>Custom Keychain</h3>
 
-<p>
-Name, Photo और Logo Keychain
-</p>
+<div class="rating">⭐ 4.7 | Custom</div>
 
-<a class="order-btn"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Custom%20Keychain%20order%20karna%20hai."
-target="_blank">
-Order करें →
-</a>
+<div class="price">
+₹99
+<span class="old">₹129</span>
+</div>
+
+<small>Name / Photo / Logo</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('Custom Keychain',99,'🔑')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('Custom Keychain',99,'🔑')">
+Buy Now
+</button>
 
 </div>
 
 </div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-🖱️
 </div>
+
+
+<!-- MOUSE PAD -->
+
+<div class="product" data-name="Custom Mouse Pad" data-category="Mouse Pad" data-price="149">
+
+<button class="wish" onclick="toggleWish('Custom Mouse Pad')">♡</button>
+
+<div class="product-img">🖱️</div>
 
 <div class="product-info">
 
 <h3>Custom Mouse Pad</h3>
 
-<p>
-Photo और Logo Mouse Pad
-</p>
+<div class="rating">⭐ 4.8 | Photo Print</div>
 
-<a class="order-btn"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Custom%20Mouse%20Pad%20order%20karna%20hai."
-target="_blank">
-Order करें →
-</a>
+<div class="price">
+₹149
+<span class="old">₹199</span>
+</div>
+
+<small>Photo / Logo</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('Custom Mouse Pad',149,'🖱️')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('Custom Mouse Pad',149,'🖱️')">
+Buy Now
+</button>
 
 </div>
 
 </div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-🛏️
 </div>
+
+
+<!-- CUSHION -->
+
+<div class="product" data-name="Photo Cushion" data-category="Cushion" data-price="249">
+
+<button class="wish" onclick="toggleWish('Photo Cushion')">♡</button>
+
+<div class="product-img">🛏️</div>
 
 <div class="product-info">
 
 <h3>Photo Cushion</h3>
 
-<p>
-Custom Photo और Design Cushion
-</p>
+<div class="rating">⭐ 4.8 | Personalized</div>
 
-<a class="order-btn"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20Photo%20Cushion%20order%20karna%20hai."
-target="_blank">
-Order करें →
-</a>
+<div class="price">
+₹249
+<span class="old">₹299</span>
+</div>
+
+<small>Photo / Custom Design</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('Photo Cushion',249,'🛏️')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('Photo Cushion',249,'🛏️')">
+Buy Now
+</button>
 
 </div>
 
 </div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-🎨
 </div>
+
+
+<!-- DTF -->
+
+<div class="product" data-name="DTF Printing" data-category="Printing" data-price="199">
+
+<button class="wish" onclick="toggleWish('DTF Printing')">♡</button>
+
+<div class="product-img">🎨</div>
 
 <div class="product-info">
 
-<h3>DTF / Screen Printing</h3>
+<h3>DTF Printing</h3>
 
-<p>
-Business, Team और Bulk Orders
-</p>
+<div class="rating">⭐ Custom Quote</div>
 
-<a class="order-btn"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20DTF%20ya%20Screen%20Printing%20ke%20liye%20quotation%20chahiye."
-target="_blank">
-Quotation लें →
+<div class="price">
+₹199+
+</div>
+
+<small>Design & Quantity के अनुसार</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('DTF Printing',199,'🎨')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('DTF Printing',199,'🎨')">
+Buy Now
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- SCREEN PRINTING -->
+
+<div class="product" data-name="Screen Printing" data-category="Printing" data-price="99">
+
+<button class="wish" onclick="toggleWish('Screen Printing')">♡</button>
+
+<div class="product-img">🖨️</div>
+
+<div class="product-info">
+
+<h3>Screen Printing</h3>
+
+<div class="rating">⭐ Bulk Service</div>
+
+<div class="price">
+₹99+
+</div>
+
+<small>Quantity के अनुसार Quote</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('Screen Printing',99,'🖨️')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('Screen Printing',99,'🖨️')">
+Buy Now
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- SCHOOL -->
+
+<div class="product" data-name="School Uniform Printing" data-category="Printing" data-price="199">
+
+<button class="wish" onclick="toggleWish('School Uniform Printing')">♡</button>
+
+<div class="product-img">🏫</div>
+
+<div class="product-info">
+
+<h3>School Uniform Printing</h3>
+
+<div class="rating">⭐ Bulk Orders</div>
+
+<div class="price">
+₹199+
+</div>
+
+<small>School / Institution</small>
+
+<div class="actions">
+
+<button class="add"
+onclick="addToCart('School Uniform Printing',199,'🏫')">
+🛒 Add
+</button>
+
+<button class="buy"
+onclick="buyNow('School Uniform Printing',199,'🏫')">
+Buy Now
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CART -->
+
+<section class="container" id="cart">
+
+<div class="heading">
+<h2>🛒 Your Cart</h2>
+</div>
+
+<div class="cart-box">
+
+<div id="cartItems">
+<p>आपका Cart अभी खाली है।</p>
+</div>
+
+<div class="cart-total">
+Total: ₹<span id="cartTotal">0</span>
+</div>
+
+<br>
+
+<a
+class="btn yellow"
+href="#checkout">
+Proceed to Checkout →
 </a>
 
 </div>
 
-</div>
-
-
-</div>
-
 </section>
 
 
-<!-- GALLERY -->
-<section id="gallery">
+<!-- WISHLIST -->
 
-<div class="title">
+<section class="container" id="wishlist">
 
-<h2>🖼️ Our Catalog Gallery</h2>
+<div class="heading">
+<h2>❤️ Wishlist</h2>
+</div>
 
-<p>
-Aditya Print के custom products और printing work
+<div class="cart-box">
+
+<p id="wishlistItems">
+अभी Wishlist खाली है।
 </p>
 
 </div>
 
+</section>
 
-<div class="gallery">
 
+<!-- CHECKOUT -->
 
-<div class="gallery-item">
-<div class="big-icon">👕</div>
-<h3>T-Shirt Printing</h3>
+<section class="container" id="checkout">
+
+<div class="heading">
+<h2>📦 Checkout / Order</h2>
+</div>
+
+<div class="checkout">
+
+<div class="form">
+
+<h2>Customer Details</h2>
+
+<input
+id="customerName"
+type="text"
+placeholder="आपका नाम">
+
+<input
+id="customerPhone"
+type="tel"
+placeholder="Mobile Number">
+
+<input
+id="customerAddress"
+type="text"
+placeholder="Delivery / Shop Address">
+
+<textarea
+id="customerNote"
+placeholder="Design, size, quantity या कोई अन्य जानकारी"></textarea>
+
+<button
+class="whatsapp"
+onclick="sendOrder()">
+💬 WhatsApp पर Order भेजें
+</button>
+
 </div>
 
 
-<div class="gallery-item">
-<div class="big-icon">☕</div>
-<h3>Mug Printing</h3>
+<div class="form">
+
+<h2>Order Summary</h2>
+
+<div id="checkoutSummary">
+Cart खाली है।
 </div>
 
+<br>
 
-<div class="gallery-item">
-<div class="big-icon">🔑</div>
-<h3>Keychain</h3>
+<strong>
+Total Amount: ₹<span id="checkoutTotal">0</span>
+</strong>
+
 </div>
-
-
-<div class="gallery-item">
-<div class="big-icon">🖱️</div>
-<h3>Mouse Pad</h3>
-</div>
-
-
-<div class="gallery-item">
-<div class="big-icon">🛏️</div>
-<h3>Cushion Printing</h3>
-</div>
-
-
-<div class="gallery-item">
-<div class="big-icon">🎨</div>
-<h3>Custom Printing</h3>
-</div>
-
 
 </div>
 
 </section>
 
 
-<!-- BULK ORDERS -->
-<section id="bulk">
+<!-- BULK -->
+
+<section class="container">
 
 <div class="bulk">
 
-<h2>📦 Bulk Order चाहिए?</h2>
+<h2>📦 Bulk Order?</h2>
 
 <p>
-School, College, Team, Event, Business,
-Shop, Company या किसी भी कार्यक्रम के लिए
-Bulk Printing Order स्वीकार किए जाते हैं।
+School, College, Team, Event, Business और Company
+के लिए Bulk Printing Order करें।
 </p>
 
 <br>
 
-<a class="btn primary"
+<a
+class="btn yellow"
 href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20bulk%20printing%20order%20ke%20liye%20quotation%20chahiye."
 target="_blank">
-💬 Bulk Order के लिए WhatsApp करें
+💬 Bulk Quotation
 </a>
-
-</div>
-
-</section>
-
-
-<!-- WHY ADITYA PRINT -->
-<section>
-
-<div class="title">
-
-<h2>⭐ Aditya Print क्यों?</h2>
-
-<p>
-आपके custom printing काम के लिए एक ही जगह।
-</p>
-
-</div>
-
-
-<div class="why-grid">
-
-
-<div class="why">
-<div class="icon">🎨</div>
-<strong>Custom Design</strong>
-<p>आपके design के अनुसार printing.</p>
-</div>
-
-
-<div class="why">
-<div class="icon">📦</div>
-<strong>Bulk Orders</strong>
-<p>Events, schools और businesses के लिए.</p>
-</div>
-
-
-<div class="why">
-<div class="icon">📱</div>
-<strong>Easy WhatsApp Order</strong>
-<p>Design WhatsApp पर भेजें.</p>
-</div>
-
-
-<div class="why">
-<div class="icon">📍</div>
-<strong>Local Service</strong>
-<p>Noorpur में local printing service.</p>
-</div>
-
 
 </div>
 
@@ -858,43 +1277,28 @@ target="_blank">
 
 
 <!-- CONTACT -->
-<section id="contact">
 
-<div class="title">
+<section class="container">
 
-<h2>📞 Contact करें</h2>
-
-<p>
-Order और जानकारी के लिए सीधे संपर्क करें।
-</p>
-
+<div class="heading">
+<h2>📞 Contact</h2>
 </div>
-
 
 <div class="contact">
 
+<div class="contact-card">
 
-<div class="contactbox">
-
-<h3>📍 हमारा Address</h3>
+<h3>📍 Address</h3>
 
 <p>
 NOORPUR Nahtor Chauraha,<br>
 Bijnor Road
 </p>
 
-<br>
-
-<a class="btn primary"
-href="https://www.google.com/maps/search/?api=1&query=NOORPUR%20Nahtor%20Chauraha%2C%20Bijnor%20Road"
-target="_blank">
-📍 Google Maps पर देखें
-</a>
-
 </div>
 
 
-<div class="contactbox">
+<div class="contact-card">
 
 <h3>📱 Call / WhatsApp</h3>
 
@@ -906,49 +1310,31 @@ target="_blank">
 
 <br>
 
-<a class="btn primary"
+<a
+class="btn yellow"
 href="https://wa.me/919568618658"
 target="_blank">
-💬 WhatsApp पर बात करें →
+💬 WhatsApp
 </a>
 
 </div>
-
 
 </div>
 
 </section>
 
 
-<!-- FINAL CTA -->
-<div class="final-cta">
-
-<h2>अपना Design भेजिए, Printing हम करेंगे! 🎨</h2>
-
-<p>
-T-Shirt • Mug • Keychain • Mouse Pad • Cushion • DTF • Screen Printing
-</p>
-
-<a class="btn primary"
-href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print%2C%20mujhe%20printing%20order%20ke%20liye%20jaankari%20chahiye."
-target="_blank">
-💬 WhatsApp पर बात करें
-</a>
-
-<a class="btn secondary"
-href="tel:+919568618658">
-📞 अभी Call करें
-</a>
-
-</div>
-
-
 <!-- FOOTER -->
+
 <footer>
 
 <p>
 <strong>ADITYA PRINT</strong>
-— Printing & Branding Solutions
+— Online Printing Store
+</p>
+
+<p>
+T-Shirt • Mug • Keychain • Mouse Pad • Cushion • Printing
 </p>
 
 <p>
@@ -959,6 +1345,8 @@ NOORPUR Nahtor Chauraha, Bijnor Road
 📞 9568618658
 </p>
 
+<br>
+
 <p>
 © 2026 Aditya Print. All Rights Reserved.
 </p>
@@ -966,5 +1354,132 @@ NOORPUR Nahtor Chauraha, Bijnor Road
 </footer>
 
 
-</body>
-  </html>
+<!-- MOBILE NAV -->
+
+<div class="mobile-nav">
+
+<a href="#home">
+<span>🏠</span>
+Home
+</a>
+
+<a href="#products">
+<span>🛍️</span>
+Shop
+</a>
+
+<a href="#wishlist">
+<span>❤️</span>
+Wishlist
+</a>
+
+<a href="#cart">
+<span>🛒</span>
+Cart
+</a>
+
+<a href="#checkout">
+<span>📦</span>
+Order
+</a>
+
+</div>
+
+
+<script>
+
+/* CART */
+
+let cart = JSON.parse(localStorage.getItem("adityaCart")) || [];
+
+let wishlist = JSON.parse(localStorage.getItem("adityaWishlist")) || [];
+
+
+/* ADD TO CART */
+
+function addToCart(name,price,icon){
+
+  let existing = cart.find(item => item.name === name);
+
+  if(existing){
+    existing.qty++;
+  }else{
+    cart.push({
+      name:name,
+      price:price,
+      icon:icon,
+      qty:1
+    });
+  }
+
+  saveCart();
+
+  alert(name + " Cart में add हो गया!");
+
+}
+
+
+/* BUY NOW */
+
+function buyNow(name,price,icon){
+
+  addToCart(name,price,icon);
+
+  location.href="#checkout";
+
+}
+
+
+/* SAVE CART */
+
+function saveCart(){
+
+  localStorage.setItem(
+    "adityaCart",
+    JSON.stringify(cart)
+  );
+
+  renderCart();
+
+}
+
+
+/* RENDER CART */
+
+function renderCart(){
+
+  let box=document.getElementById("cartItems");
+
+  let total=0;
+
+  let count=0;
+
+  if(cart.length===0){
+
+    box.innerHTML="<p>आपका Cart अभी खाली है।</p>";
+
+  }else{
+
+    box.innerHTML="";
+
+    cart.forEach((item,index)=>{
+
+      total += item.price * item.qty;
+
+      count += item.qty;
+
+      box.innerHTML += `
+
+      <div class="cart-item">
+
+        <div class="cart-icon">
+          ${item.icon}
+        </div>
+
+        <div class="cart-details">
+
+          <h3>${item.name}</h3>
+
+          <p>₹${item.price} × ${item.qty}</p>
+
+          <div class=
