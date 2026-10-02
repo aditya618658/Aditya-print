@@ -1,133 +1,149 @@
-<!doctype html>
-<html lang="hi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aditya Print | Noorpur</title>
-<meta name="description" content="Aditya Print - T-Shirt, Mug, Keychain, Mouse Pad, DTF, Screen Printing, School Uniform Printing and Bulk Orders.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Print - Online Catalog</title>
 <style>
-:root{--navy:#0b2348;--blue:#173d78;--gold:#f0ad18;--green:#16a34a;--bg:#f4f6f8;--text:#172033;--muted:#667085;--card:#fff;--line:#e5e7eb}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
-a{text-decoration:none;color:inherit} button,input,select{font:inherit}
-.top{background:var(--navy);color:#fff;font-size:13px;padding:7px 5%;display:flex;justify-content:space-between;gap:12px}
-.header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
-.head{max-width:1250px;margin:auto;padding:12px 18px;display:flex;align-items:center;gap:18px}
-.logo{font-size:25px;font-weight:900;white-space:nowrap}.logo span{color:var(--gold)}
-.search{flex:1;display:flex;background:#f1f3f6;border-radius:7px;overflow:hidden;border:1px solid #ddd}
-.search input{flex:1;border:0;background:transparent;padding:12px 14px;outline:0}.search button{border:0;background:var(--gold);padding:0 20px;font-weight:800;cursor:pointer}
-.head-actions{display:flex;gap:9px;align-items:center}.action{border:0;background:#fff;cursor:pointer;padding:10px;font-weight:700}.cart{background:var(--navy);color:#fff;border-radius:7px}
-.nav{background:var(--navy);color:#fff}.navin{max-width:1250px;margin:auto;padding:0 18px;display:flex;gap:5px;overflow:auto}.nav button{background:transparent;color:#fff;border:0;padding:13px 15px;cursor:pointer;white-space:nowrap}.nav button:hover{background:#173b70}
-.wrap{max-width:1250px;margin:auto;padding:18px}
-.hero{background:linear-gradient(110deg,#0d2a55,#24518e);color:#fff;border-radius:10px;padding:32px;display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:center}
-.hero h1{font-size:42px;margin:0 0 8px}.hero h1 span{color:var(--gold)}.hero p{font-size:17px;line-height:1.6;max-width:650px}.hero .btns{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:7px;padding:12px 18px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#14243e}.secondary{background:#fff;color:var(--navy)}
-.hero-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.hero-box{height:145px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:46px}
-.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:26px 0 14px}.section-head h2{margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid #ddd;background:#fff;border-radius:20px;padding:8px 14px;cursor:pointer}.filter.active{background:var(--navy);color:#fff}
-.layout{display:grid;grid-template-columns:220px 1fr;gap:18px}.sidebar{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px;height:max-content;position:sticky;top:130px}.sidebar h3{margin-top:0}.sidebar label{display:block;margin:12px 0;cursor:pointer}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.pic{aspect-ratio:1/1;background:#f0f2f5;display:flex;align-items:center;justify-content:center;color:#8a93a2;font-size:42px;overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover}.info{padding:13px}.tag{font-size:11px;color:#b47a00;font-weight:900;text-transform:uppercase}.title{font-size:16px;font-weight:800;margin:5px 0}.desc{font-size:12px;color:var(--muted);min-height:34px}.price{font-size:18px;font-weight:900;margin:9px 0}.price small{font-size:11px;color:var(--muted);font-weight:500}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}.add,.order{padding:10px;border-radius:6px;cursor:pointer;font-weight:800}.add{border:1px solid var(--navy);background:#fff;color:var(--navy)}.order{border:0;background:var(--navy);color:#fff}
-.info-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}.strip{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;text-align:center}.strip b{display:block;margin-bottom:5px}
-.bulk{background:var(--navy);color:#fff;border-radius:10px;padding:28px;text-align:center;margin:24px 0}.bulk h2{margin:0 0 7px}.bulk .btn{margin-top:12px}
-footer{background:#071a36;color:#fff;margin-top:35px}.foot{max-width:1250px;margin:auto;padding:28px 18px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.muted{color:#c8d2e2;font-size:13px}
-.drawer{position:fixed;right:0;top:0;height:100%;width:min(420px,94vw);background:#fff;z-index:50;box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(105%);transition:.25s;padding:18px;overflow:auto}.drawer.open{transform:none}.shade{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:40;display:none}.shade.open{display:block}.drawer-head{display:flex;justify-content:space-between;align-items:center}.cart-row{display:grid;grid-template-columns:55px 1fr auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.thumb{width:55px;height:55px;border-radius:6px;background:#eee;object-fit:cover}.qty{display:flex;align-items:center;gap:8px}.qty button{width:30px;height:30px;border:1px solid #ddd;background:#fff;border-radius:5px;cursor:pointer}.checkout{width:100%;background:var(--green);color:#fff;border:0;border-radius:7px;padding:13px;font-weight:900;cursor:pointer}
-.empty{padding:40px;text-align:center;background:#fff;border:1px dashed #ccc;border-radius:10px;grid-column:1/-1}
-@media(max-width:1000px){.products{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.sidebar{position:static}.hero{grid-template-columns:1fr}.hero-grid{max-width:600px}}
-@media(max-width:700px){.top{font-size:11px}.head{flex-wrap:wrap}.search{order:3;flex-basis:100%}.hero{padding:23px}.hero h1{font-size:31px}.hero-box{height:105px}.products{grid-template-columns:repeat(2,1fr)}.info-strip{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}}
-@media(max-width:430px){.products{grid-template-columns:1fr 1fr}.card-actions{grid-template-columns:1fr}.head-actions .action:not(.cart){display:none}}
+*{box-sizing:border-box}body{margin:0;background:#f1f3f6;font-family:Arial,Helvetica,sans-serif;color:#212121}
+a{text-decoration:none;color:inherit}.top{height:56px;background:#2874f0;color:white;display:flex;align-items:center;padding:0 calc((100% - 1250px)/2);gap:20px}
+.brand{width:125px;font-size:23px;font-weight:800;font-style:italic;color:#fff}.brand small{display:block;font-size:10px;color:#ffe500;font-style:normal;text-align:center}
+.search{height:38px;display:flex;background:#fff;border-radius:2px;flex:1;max-width:610px}.search input{border:0;outline:0;padding:0 16px;flex:1;font-size:14px}.search button{width:52px;border:0;background:#fff;color:#2874f0;font-size:19px}
+.login{background:#fff;color:#2874f0;border:0;padding:9px 31px;font-weight:700;border-radius:2px}.toplink{font-size:14px;font-weight:700;white-space:nowrap}.cart{font-size:14px;font-weight:700;white-space:nowrap}
+.categories{background:#fff;box-shadow:0 1px 2px #ddd}.catin{max-width:1250px;margin:auto;display:flex;justify-content:space-between;overflow:auto}.cat{min-width:105px;text-align:center;padding:12px 8px;font-size:13px;font-weight:700;cursor:pointer}.cat .ico{font-size:27px;display:block;margin-bottom:4px}.cat:hover{color:#2874f0}
+.page{max-width:1250px;margin:10px auto}.hero{background:#fff;height:280px;display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden}.heroText{padding:38px 45px;background:linear-gradient(120deg,#102f61,#2874f0);color:#fff}.heroText h1{font-size:40px;margin:0 0 10px}.heroText h1 span{color:#ffd54a}.heroText p{font-size:16px;line-height:1.6}.heroBtn{border:0;background:#ffcf25;color:#172b4d;padding:12px 22px;font-weight:800;border-radius:2px;cursor:pointer}.heroVisual{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:15px;background:#eaf1ff}.visual{background:#fff;display:flex;align-items:center;justify-content:center;font-size:65px}
+.block{background:#fff;margin-top:10px;padding:16px}.blockHead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:14px}.blockHead h2{margin:0;font-size:22px}.view{background:#2874f0;color:#fff;border:0;padding:9px 18px;font-weight:700}
+.toolbar{display:flex;gap:8px;overflow:auto;margin-bottom:14px}.pill{border:1px solid #ddd;background:#fff;border-radius:18px;padding:8px 15px;white-space:nowrap;cursor:pointer}.pill.active{background:#2874f0;color:#fff;border-color:#2874f0}
+.content{display:grid;grid-template-columns:210px 1fr;gap:14px}.side{background:#fff;border:1px solid #e0e0e0}.side h3{margin:0;padding:17px;border-bottom:1px solid #eee;font-size:16px}.side label{display:block;padding:11px 17px;font-size:13px;cursor:pointer}.side label:hover{background:#f5f8ff}.products{display:grid;grid-template-columns:repeat(4,1fr);background:#fff}.product{padding:14px;border-right:1px solid #eee;border-bottom:1px solid #eee;min-width:0;position:relative}.photo{height:205px;background:#f7f7f7;display:flex;align-items:center;justify-content:center;font-size:70px;overflow:hidden}.photo img{width:100%;height:100%;object-fit:contain}.product:hover .photo{transform:scale(1.01)}.pname{font-size:15px;font-weight:700;margin-top:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.desc{font-size:12px;color:#878787;margin-top:5px;height:30px}.price{font-size:17px;font-weight:800;margin-top:8px}.old{text-decoration:line-through;color:#888;font-size:12px;margin-left:5px;font-weight:400}.green{color:#388e3c;font-size:12px;margin-left:6px}.actions{display:flex;gap:6px;margin-top:10px}.add,.buy{flex:1;padding:9px 4px;border:0;font-weight:700;font-size:12px;cursor:pointer}.add{background:#ff9f00;color:#fff}.buy{background:#fb641b;color:#fff}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.feature{background:#fff;padding:22px;text-align:center}.feature b{display:block;font-size:16px;margin-bottom:5px}.feature span{font-size:12px;color:#777}
+.footer{background:#172337;color:#ddd;margin-top:10px}.foot{max-width:1250px;margin:auto;padding:30px 18px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.foot h4{color:#878787;margin-top:0}.foot p{font-size:12px;line-height:1.8}.copyright{text-align:center;border-top:1px solid #45505e;padding:15px;font-size:12px}
+.drawer{position:fixed;right:-420px;top:0;width:400px;max-width:94%;height:100%;background:#fff;z-index:30;box-shadow:-4px 0 20px #777;transition:.25s;padding:20px;overflow:auto}.drawer.open{right:0}.shade{position:fixed;inset:0;background:#0008;z-index:29;display:none}.shade.open{display:block}.drawer h2{margin-top:0}.row{display:grid;grid-template-columns:55px 1fr auto;gap:10px;padding:12px 0;border-bottom:1px solid #eee}.thumb{width:55px;height:55px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:28px}.close{float:right;border:0;background:#fff;font-size:22px}.wa{width:100%;background:#25d366;color:#fff;border:0;padding:13px;font-weight:800;cursor:pointer}
+@media(max-width:900px){.top{padding:0 12px}.toplink{display:none}.page{margin:8px}.hero{grid-template-columns:1fr;height:auto}.heroVisual{display:none}.content{grid-template-columns:1fr}.side{display:none}.products{grid-template-columns:repeat(3,1fr)}.foot{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.brand{width:80px;font-size:17px}.search{max-width:none}.login{padding:8px 12px}.cart{display:none}.cat{min-width:82px;font-size:11px}.heroText{padding:25px}.heroText h1{font-size:29px}.products{grid-template-columns:repeat(2,1fr)}.photo{height:150px}.features{grid-template-columns:1fr}.foot{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="top"><span>ADITYA PRINT</span><span>Noorpur, Nahtor Chauraha, Bijnor Road</span><span>📱 9568618658</span></div>
-<header class="header">
-  <div class="head">
-    <a class="logo" href="#">ADITYA <span>PRINT</span></a>
-    <div class="search"><input id="search" placeholder="Search T-Shirt, Mug, Keychain..."><button id="searchBtn">Search</button></div>
-    <div class="head-actions"><button class="action" id="contactBtn">Contact</button><button class="action cart" id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button></div>
-  </div>
-  <nav class="nav"><div class="navin" id="navCats"></div></nav>
-</header>
-
-<main class="wrap">
-<section class="hero">
-  <div>
-    <h1>Apna Design.<br><span>Apna Print.</span></h1>
-    <p>T-Shirt, Mug, Keychain, Mouse Pad, Cushion aur professional printing services — personal, business, school aur bulk orders ke liye.</p>
-    <div class="btns"><button class="btn primary" id="productsBtn">Products Dekhein</button><button class="btn secondary" id="quoteBtn">Quote Maangein</button></div>
-  </div>
-  <div class="hero-grid"><div class="hero-box">👕</div><div class="hero-box">☕</div><div class="hero-box">🎁</div><div class="hero-box">🖨️</div></div>
-</section>
-
-<div class="section-head"><div><h2>Products & Services</h2><div class="muted">Catalog se product select karein, cart mein add karein ya WhatsApp order karein.</div></div><div class="filters" id="filters"></div></div>
-
-<div class="layout">
-  <aside class="sidebar">
-    <h3>Categories</h3>
-    <div id="sideCats"></div>
-    <hr>
-    <h3>Quick Contact</h3>
-    <p class="muted">WhatsApp: 9568618658</p>
-    <button class="btn primary" style="width:100%" id="sideQuote">Bulk Quote</button>
-  </aside>
-  <section class="products" id="products"></section>
+<div class="top">
+  <a class="brand" href="#">ADITYA PRINT<small>NOORPUR • BIJNOR</small></a>
+  <div class="search"><input id="q" placeholder="Search for products, printing, T-Shirt, Mug..."><button onclick="render()">⌕</button></div>
+  <button class="login" onclick="openAdmin()">⚙ Admin</button><button class="login" onclick="whatsapp('Namaste Aditya Print, mujhe catalog aur price list chahiye.')">LOGIN / CONTACT</button>
+  <span class="toplink">More ▾</span><span class="cart" onclick="openCart()">🛒 Cart <b id="count">0</b></span>
 </div>
+<div class="categories"><div class="catin" id="cats"></div></div>
 
-<section class="info-strip">
-  <div class="strip"><b>🎨 Custom Design</b><span class="muted">Aapka photo, naam ya logo</span></div>
-  <div class="strip"><b>📦 Bulk Orders</b><span class="muted">Team, school, event & business</span></div>
-  <div class="strip"><b>📱 WhatsApp Order</b><span class="muted">Design bhejiye, quote lijiye</span></div>
+<main class="page">
+<section class="hero">
+ <div class="heroText"><h1>Print Your <span>Ideas</span></h1><p>T-Shirt, Mug, Keychain, Mouse Pad, Cushion, DTF, Screen Printing & School Printing.</p><button class="heroBtn" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">SHOP NOW</button></div>
+ <div class="heroVisual"><div class="visual">👕</div><div class="visual">☕</div><div class="visual">🎁</div><div class="visual">🖨️</div></div>
 </section>
 
-<section class="bulk"><h2>Bulk Order Chahiye?</h2><div>School, sports team, event, business ya group ke liye quantity aur design WhatsApp par bhejiye.</div><button class="btn primary" id="bulkBtn">Bulk Order WhatsApp</button></section>
+<section class="block" id="shop">
+ <div class="blockHead"><h2>Best Selling Products</h2><button class="view" onclick="document.getElementById('shop').scrollIntoView()">VIEW ALL</button></div>
+ <div class="toolbar" id="pills"></div>
+ <div class="content">
+  <aside class="side"><h3>FILTERS</h3><div id="side"></div></aside>
+  <div class="products" id="products"></div>
+ </div>
+</section>
+
+<section class="features">
+ <div class="feature"><b>🎨 CUSTOM DESIGN</b><span>Apna photo, naam ya logo bhejiye</span></div>
+ <div class="feature"><b>📦 BULK ORDERS</b><span>School, sports, event & business</span></div>
+ <div class="feature"><b>📱 WHATSAPP ORDER</b><span>Design bhejiye aur quotation lijiye</span></div>
+</section>
 </main>
 
-<footer><div class="foot"><div><b>Aditya Print</b><br><span class="muted">Noorpur (Nahtor Chauraha), Bijnor Road<br>📱 9568618658</span></div><div class="muted">T-Shirt • Mug • DTF • Screen Printing • School Printing</div></div></footer>
+<footer class="footer"><div class="foot">
+ <div><h4>ABOUT</h4><p>Aditya Print<br>Noorpur (Nahtor Chauraha), Bijnor Road</p></div>
+ <div><h4>HELP</h4><p>Order on WhatsApp<br>Bulk Orders<br>Custom Design</p></div>
+ <div><h4>POLICY</h4><p>Custom Orders<br>Printing Requirements<br>Order Confirmation</p></div>
+ <div><h4>CONTACT</h4><p>📱 9568618658<br>WhatsApp available</p></div>
+</div><div class="copyright">© Aditya Print • Custom Printing • Noorpur, Bijnor Road</div></footer>
 
-<div class="shade" id="shade"></div>
-<aside class="drawer" id="drawer">
-  <div class="drawer-head"><h2>Your Cart</h2><button class="action" id="closeCart">✕</button></div>
-  <div id="cartItems"></div>
-  <div id="cartTotal" style="font-size:20px;font-weight:900;margin:18px 0"></div>
-  <button class="checkout" id="checkout">WhatsApp par Order Bhejein</button>
-</aside>
+<div class="shade" id="shade" onclick="closeCart()"></div>
+<div class="drawer" id="drawer"><button class="close" onclick="closeCart()">✕</button><h2>My Cart</h2><div id="cart"></div><h3 id="total"></h3><button class="wa" onclick="checkout()">ORDER ON WHATSAPP</button></div>
 
 <script src="products.js"></script>
 <script>
-const PHONE="919568618658";
-let cart=[];
-let activeCat="All";
-const $=s=>document.querySelector(s);
-const money=n=>n?`₹${Number(n).toLocaleString("en-IN")}`:"Price on Request";
-
-function wa(text){location.href=`https://wa.me/${PHONE}?text=${encodeURIComponent(text)}`}
-
-function cats(){
- const all=["All",...new Set(PRODUCTS.map(p=>p.category))];
- $("#navCats").innerHTML=all.map(c=>`<button data-cat="${c}">${c}</button>`).join("");
- $("#filters").innerHTML=all.map(c=>`<button class="filter ${c==="All"?"active":""}" data-cat="${c}">${c}</button>`).join("");
- $("#sideCats").innerHTML=all.map(c=>`<label><input type="radio" name="cat" ${c==="All"?"checked":""} value="${c}"> ${c}</label>`).join("");
- document.querySelectorAll("[data-cat]").forEach(b=>b.addEventListener("click",()=>{activeCat=b.dataset.cat;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x.dataset.cat===activeCat));document.querySelectorAll('input[name="cat"]').forEach(x=>x.checked=x.value===activeCat);render();}));
- document.querySelectorAll('input[name="cat"]').forEach(x=>x.addEventListener("change",()=>{activeCat=x.value;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.cat===activeCat));render()}));
+const PHONE="919568618658";let active="All",cart=[];
+const categories=["All",...new Set(PRODUCTS.map(x=>x.category))];
+function whatsapp(t){location.href="https://wa.me/"+PHONE+"?text="+encodeURIComponent(t)}
+function setup(){
+document.getElementById("cats").innerHTML=categories.map(x=>`<div class="cat" onclick="setCat('${x}')"><span class="ico">${icon(x)}</span>${x}</div>`).join("");
+document.getElementById("pills").innerHTML=categories.map(x=>`<button class="pill ${x==='All'?'active':''}" onclick="setCat('${x}')">${x}</button>`).join("");
+document.getElementById("side").innerHTML=categories.map(x=>`<label><input type="radio" name="c" ${x==='All'?'checked':''} onclick="setCat('${x}')"> ${x}</label>`).join("");
+render();
 }
+function icon(x){return x==="T-Shirt"?"👕":x==="Gifts"?"🎁":x==="Printing"?"🖨️":x==="School"?"🏫":"🛍️"}
+function setCat(x){active=x;document.querySelectorAll(".pill").forEach(b=>b.classList.toggle("active",b.textContent===x));render()}
 function render(){
- const q=$("#search").value.trim().toLowerCase();
- const list=PRODUCTS.filter(p=>(activeCat==="All"||p.category===activeCat)&&(!q||(p.name+" "+p.category+" "+p.description).toLowerCase().includes(q)));
- $("#products").innerHTML=list.length?list.map(p=>`
- <article class="card">
-  <div class="pic">${p.image?`<img src="${p.image}" alt="${p.name}">`:`${p.icon||"🖨️"}`}</div>
-  <div class="info"><div class="tag">${p.category}</div><div class="title">${p.name}</div><div class="desc">${p.description}</div>
-  <div class="price">${money(p.price)} <small>${p.price?"":"custom quote"}</small></div>
-  <div class="card-actions"><button class="add" data-add="${p.id}">Add to Cart</button><button class="order" data-order="${p.id}">WhatsApp</button></div></div>
- </article>`).join(""):`<div class="empty">Is category/search mein product nahi mila.</div>`;
- document.querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>add(Number(b.dataset.add))));
- document.querySelectorAll("[data-order]").forEach(b=>b.addEventListener("click",()=>{const p=PRODUCTS.find(x=>x.id===Number(b.dataset.order));wa(`Namaste Aditya Print, mujhe ${p.name} ke baare mein order/price chahiye.`)}));
+let q=document.getElementById("q").value.toLowerCase();
+let list=PRODUCTS.filter(p=>(active==="All"||p.category===active)&&((p.name+" "+p.description+" "+p.category).toLowerCase().includes(q)));
+document.getElementById("products").innerHTML=list.length?list.map(p=>`<div class="product"><div class="photo">${p.image?`<img src="${p.image}" alt="${p.name}">`:p.icon||"🖨️"}</div><div class="pname">${p.name}</div><div class="desc">${p.description}</div><div class="price">${p.price?"₹"+p.price:"Price on Request"} ${p.price?'<span class="green">Available</span>':""}</div><div class="actions"><button class="add" onclick="add(${p.id})">ADD TO CART</button><button class="buy" onclick="buy(${p.id})">BUY NOW</button></div></div>`).join(""):`<div style="padding:40px;text-align:center;grid-column:1/-1">No product found.</div>`;
 }
-function add(id){const p=PRODUCTS.find(x=>x.id===id);const old=cart.find(x=>x.id===id);old?old.qty++:cart.push({...p,qty:1});updateCart();openCart()}
-function updateCart(){ $("#cartCount").textContent=cart.reduce((s,x)=>s+x.qty,0); $("#cartItems").innerHTML=cart.length?cart.map((p,i)=>`<div class="cart-row"><div class="thumb" style="display:flex;align-items:center;justify-content:center">${p.icon||"🖨️"}</div><div><b>${p.name}</b><div class="muted">${money(p.price)}</div><div class="qty"><button data-dec="${i}">−</button>${p.qty}<button data-inc="${i}">+</button></div></div><button class="action" data-del="${i}">🗑️</button></div>`).join(""):`<p class="muted">Cart abhi khaali hai.</p>`; const total=cart.reduce((s,x)=>s+(Number(x.price)||0)*x.qty,0); $("#cartTotal").textContent=total?`Total: ${money(total)}`:"";document.querySelectorAll("[data-inc]").forEach(b=>b.onclick=()=>{cart[+b.dataset.inc].qty++;updateCart()});document.querySelectorAll("[data-dec]").forEach(b=>b.onclick=()=>{let x=cart[+b.dataset.dec];x.qty--;if(x.qty<=0)cart.splice(+b.dataset.dec,1);updateCart()});document.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{cart.splice(+b.dataset.del,1);updateCart()})}
-function openCart(){$("#drawer").classList.add("open");$("#shade").classList.add("open")} function closeCart(){$("#drawer").classList.remove("open");$("#shade").classList.remove("open")}
-$("#searchBtn").onclick=render;$("#search").addEventListener("input",render);$("#cartBtn").onclick=openCart;$("#closeCart").onclick=closeCart;$("#shade").onclick=closeCart;
-$("#productsBtn").onclick=()=>document.querySelector(".section-head").scrollIntoView({behavior:"smooth"});
-function quote(){wa("Namaste Aditya Print, mujhe bulk/custom printing ka quotation chahiye.")}
-$("#quoteBtn").onclick=quote;$("#sideQuote").onclick=quote;$("#bulkBtn").onclick=quote;$("#contactBtn").onclick=()=>wa("Namaste Aditya Print, mujhe aapki services ke baare mein jaankari chahiye.");
-$("#checkout").onclick=()=>{if(!cart.length)return;let lines=cart.map(x=>`${x.name} x ${x.qty}`).join("\n");wa(`Namaste Aditya Print,\nMujhe ye order chahiye:\n${lines}\n\nKripya price aur delivery/collection details batayein.`)}
-cats();render();updateCart();
+function add(id){let p=PRODUCTS.find(x=>x.id===id),old=cart.find(x=>x.id===id);old?old.qty++:cart.push({...p,qty:1});update();openCart()}
+function buy(id){let p=PRODUCTS.find(x=>x.id===id);whatsapp(`Namaste Aditya Print, mujhe ${p.name} order karna hai. Price batayein.`)}
+function update(){document.getElementById("count").textContent=cart.reduce((a,b)=>a+b.qty,0);document.getElementById("cart").innerHTML=cart.length?cart.map((p,i)=>`<div class="row"><div class="thumb">${p.icon||"🖨️"}</div><div><b>${p.name}</b><br><small>Qty: ${p.qty}</small><br><button onclick="minus(${i})">−</button> <button onclick="plus(${i})">+</button></div><button onclick="del(${i})">🗑️</button></div>`).join(""):"<p>Your cart is empty.</p>";let t=cart.reduce((a,b)=>a+(b.price||0)*b.qty,0);document.getElementById("total").textContent=t?"Total: ₹"+t:""}
+function plus(i){cart[i].qty++;update()}function minus(i){cart[i].qty--;if(cart[i].qty<1)cart.splice(i,1);update()}function del(i){cart.splice(i,1);update()}
+function openCart(){document.getElementById("drawer").classList.add("open");document.getElementById("shade").classList.add("open")}function closeCart(){document.getElementById("drawer").classList.remove("open");document.getElementById("shade").classList.remove("open")}
+function checkout(){if(!cart.length)return;whatsapp("Namaste Aditya Print, mera order:\n"+cart.map(p=>p.name+" x "+p.qty).join("\n")+"\n\nKripya total price batayein.")}
+setup();update();
 </script>
-</body>
-</html>
+
+<!-- ADITYA PRINT ADMIN PANEL -->
+<div id="adminShade" class="admin-shade" onclick="closeAdmin()"></div>
+<section id="adminPanel" class="admin-panel">
+  <div class="admin-head"><div><b>Aditya Print Admin</b><small>Catalog Manager</small></div><button onclick="closeAdmin()">✕</button></div>
+  <div id="adminLogin" class="admin-box">
+    <h3>🔐 Admin Login</h3><p>Default password: <b>admin123</b> (आप बाद में बदल सकते हैं)</p>
+    <input id="adminPass" type="password" placeholder="Admin password">
+    <button class="admin-primary" onclick="adminLogin()">Login</button>
+  </div>
+  <div id="adminApp" style="display:none">
+    <div class="admin-tabs"><button onclick="showAdminTab('products')">📦 Products</button><button onclick="showAdminTab('activity')">🔔 Activity</button></div>
+    <div id="adminProducts">
+      <h3>➕ Catalog में Product जोड़ें</h3>
+      <div class="admin-form">
+        <input id="apName" placeholder="Product name">
+        <input id="apCat" placeholder="Category (T-Shirt, Mug...)" value="Printing">
+        <input id="apPrice" type="number" placeholder="Price (₹)">
+        <input id="apDesc" placeholder="Short description">
+        <input id="apImage" type="file" accept="image/*" onchange="adminImage(this)">
+        <input id="apIcon" placeholder="Icon (optional) e.g. 👕">
+        <input id="apEditId" type="hidden">
+        <img id="apPreview" class="admin-preview" style="display:none">
+        <button class="admin-primary" onclick="saveAdminProduct()">💾 Save Product</button>
+        <button class="admin-secondary" onclick="clearAdminForm()">Clear</button>
+      </div>
+      <h3>आपके Products</h3><div id="adminProductList"></div>
+    </div>
+    <div id="adminActivity" style="display:none">
+      <div class="stats"><div><b id="aViews">0</b><span>Local visits</span></div><div><b id="aOrders">0</b><span>Orders/Enquiries</span></div></div>
+      <p class="note">⚠️ GitHub Pages अकेले दूसरे customers की real-time visitor list सुरक्षित तरीके से Admin को नहीं भेज सकता। Order के लिए WhatsApp button सीधे <b>9568618658</b> पर जाता है। Real-time dashboard के लिए बाद में database/backend जोड़ना होगा।</p>
+      <button class="admin-secondary" onclick="clearActivity()">Clear local activity</button>
+    </div>
+  </div>
+</section>
+<style>
+.admin-shade{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9998}.admin-shade.open{display:block}
+.admin-panel{position:fixed;right:-460px;top:0;width:440px;max-width:94vw;height:100vh;background:#fff;z-index:9999;box-shadow:-8px 0 30px rgba(0,0,0,.25);transition:.25s;overflow:auto;font-family:Arial,sans-serif}.admin-panel.open{right:0}
+.admin-head{background:#2874f0;color:#fff;padding:16px 18px;display:flex;justify-content:space-between;align-items:center}.admin-head b{font-size:19px}.admin-head small{display:block;font-size:11px;color:#ffe500;margin-top:3px}.admin-head button{background:none;border:0;color:#fff;font-size:22px}.admin-box,#adminApp{padding:18px}.admin-box input,.admin-form input{width:100%;padding:11px;margin:6px 0;border:1px solid #ddd;border-radius:4px}.admin-primary,.admin-secondary{padding:10px 16px;border:0;border-radius:4px;margin:6px 4px 6px 0;cursor:pointer}.admin-primary{background:#2874f0;color:#fff}.admin-secondary{background:#eee;color:#222}.admin-tabs{display:flex;border-bottom:1px solid #ddd;margin-bottom:15px}.admin-tabs button{flex:1;padding:11px;border:0;background:#f5f5f5}.admin-preview{width:100px;height:100px;object-fit:cover;border:1px solid #ddd;margin:8px 0}.admin-item{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid #eee}.admin-item img,.admin-item .ico{width:55px;height:55px;object-fit:cover;border-radius:5px;background:#f1f3f6;display:flex;align-items:center;justify-content:center;font-size:25px}.admin-item .grow{flex:1}.admin-item button{border:0;padding:6px;margin:2px;border-radius:4px}.stats{display:flex;gap:10px}.stats div{flex:1;background:#f1f3f6;padding:18px;text-align:center;border-radius:6px}.stats b{display:block;font-size:26px;color:#2874f0}.stats span{font-size:12px}.note{background:#fff8e1;padding:12px;border-radius:5px;font-size:13px;line-height:1.5}
+@media(max-width:650px){.admin-panel{width:100%;max-width:100vw}}
+</style>
+<script>
+let adminImageData="";
+function openAdmin(){document.getElementById('adminPanel').classList.add('open');document.getElementById('adminShade').classList.add('open');}
+function closeAdmin(){document.getElementById('adminPanel').classList.remove('open');document.getElementById('adminShade').classList.remove('open');}
+function adminLogin(){if(document.getElementById('adminPass').value==='admin123'){document.getElementById('adminLogin').style.display='none';document.getElementById('adminApp').style.display='block';renderAdminProducts();updateAdminStats()}else alert('Wrong password');}
+function adminImage(input){const f=input.files[0];if(!f)return;const r=new FileReader();r.onload=e=>{adminImageData=e.target.result;const im=document.getElementById('apPreview');im.src=adminImageData;im.style.display='block'};r.readAsDataURL(f)}
+function saveAdminProduct(){const name=document.getElementById('apName').value.trim();if(!name)return alert('Product name डालें');const id=Number(document.getElementById('apEditId').value)||Date.now();const old=PRODUCTS.find(x=>x.id===id);const obj={id,name,category:document.getElementById('apCat').value.trim()||'Printing',price:Number(document.getElementById('apPrice').value)||0,description:document.getElementById('apDesc').value.trim(),image:adminImageData||old?.image||'',icon:document.getElementById('apIcon').value.trim()||old?.icon||'🖨️'};const i=PRODUCTS.findIndex(x=>x.id===id);if(i>=0)PRODUCTS[i]=obj;else PRODUCTS.push(obj);localStorage.setItem('adityaProducts',JSON.stringify(PRODUCTS));clearAdminForm();renderAdminProducts();render();alert('Product catalog में save हो गया');}
+function clearAdminForm(){['apName','apPrice','apDesc','apIcon','apEditId'].forEach(id=>document.getElementById(id).value='');document.getElementById('apCat').value='Printing';document.getElementById('apImage').value='';adminImageData='';document.getElementById('apPreview').style.display='none'}
+function editAdminProduct(id){const p=PRODUCTS.find(x=>x.id===id);if(!p)return;document.getElementById('apName').value=p.name;document.getElementById('apCat').value=p.category;document.getElementById('apPrice').value=p.price||'';document.getElementById('apDesc').value=p.description||'';document.getElementById('apIcon').value=p.icon||'';document.getElementById('apEditId').value=p.id;adminImageData=p.image||'';if(p.image){document.getElementById('apPreview').src=p.image;document.getElementById('apPreview').style.display='block'}}
+function deleteAdminProduct(id){if(!confirm('इस product को delete करें?'))return;PRODUCTS=PRODUCTS.filter(x=>x.id!==id);localStorage.setItem('adityaProducts',JSON.stringify(PRODUCTS));renderAdminProducts();render()}
+function renderAdminProducts(){document.getElementById('adminProductList').innerHTML=PRODUCTS.map(p=>`<div class="admin-item">${p.image?`<img src="${p.image}">`:`<div class="ico">${p.icon||'🖨️'}</div>`}<div class="grow"><b>${p.name}</b><br><small>${p.category} • ${p.price?'₹'+p.price:'Price on Request'}</small></div><button onclick="editAdminProduct(${p.id})">✏️</button><button onclick="deleteAdminProduct(${p.id})">🗑️</button></div>`).join('')}
+function showAdminTab(t){document.getElementById('adminProducts').style.display=t==='products'?'block':'none';document.getElementById('adminActivity').style.display=t==='activity'?'block':'none';if(t==='activity')updateAdminStats()}
+function updateAdminStats(){document.getElementById('aViews').textContent=localStorage.getItem('adityaVisits')||0;document.getElementById('aOrders').textContent=localStorage.getItem('adityaActions')||0}
+function clearActivity(){localStorage.removeItem('adityaVisits');localStorage.removeItem('adityaActions');updateAdminStats()}
+(function(){let n=Number(localStorage.getItem('adityaVisits')||0)+1;localStorage.setItem('adityaVisits',n)})();
+</script>
+</body></html>

@@ -1,29 +1,23 @@
-ADITYA PRINT - CATALOG WEBSITE
+ADITYA PRINT V2 - FLIPKART STYLE CATALOG
 
-Is version ka purpose:
-- Flipkart-style product/catalog layout
-- Search
-- Categories
+Is version mein Flipkart-style e-commerce structure rakha gaya hai:
+- Blue top bar + search + login/contact + cart
+- Category icon navigation
+- Hero banner
+- Best Selling Products
+- Filter sidebar
 - Product cards
-- Add to Cart
-- Cart quantity/delete
-- WhatsApp order
-- Bulk order
+- Add to Cart / Buy Now
+- Cart drawer
+- WhatsApp checkout
 - Mobile responsive
-- Catalog ko baar-baar website ka design badle bina update karna
 
-CATALOG KAISE JODNA HAI:
-1. products.js open karein.
-2. PRODUCTS ke andar kisi product ki line copy karein.
-3. id naya rakhein.
-4. name, category, price, description badlein.
-5. photo ke liye photo ko assets folder mein rakhein.
-6. image: "assets/photo-name.jpg" likhein.
-7. GitHub mein Commit changes karein.
-8. Website refresh karein.
+CATALOG:
+Sirf products.js edit karna hai. Website design ko touch karne ki zarurat nahi.
 
-IMPORTANT:
-GitHub Pages static website hai. Isliye website ke andar "Add Product" admin button se kiya gaya change sab visitors ke liye permanent save nahi hota.
-Is version mein permanent catalog editing ke liye products.js ko edit karna sabse simple aur reliable method hai.
+Photo:
+assets folder mein photo rakhein, phir products.js mein:
+image:"assets/photo.jpg"
 
-Baad mein agar aap chahein to isi design ko database/admin panel se connect karke website ke andar se product add/edit/delete karne wala system banaya ja sakta hai.
+Permanent online admin panel:
+GitHub Pages static site mein website ke andar se permanent product database save nahi hota. Uske liye baad mein Firebase/Supabase jaisa database + admin login connect kiya ja sakta hai.
