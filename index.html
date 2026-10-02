@@ -2,86 +2,132 @@
 <html lang="hi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aditya Print | Noorpur</title>
+<meta name="description" content="Aditya Print - T-Shirt, Mug, Keychain, Mouse Pad, DTF, Screen Printing, School Uniform Printing and Bulk Orders.">
 <style>
-:root{--navy:#10264b;--gold:#c99622;--ink:#17243d;--muted:#697386;--bg:#f7f8fb;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
-a{text-decoration:none;color:inherit}
-.top{background:var(--navy);color:#fff;padding:9px 5%;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:15px}
-.nav{background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #e8ebf1}
-.navin{max-width:1200px;margin:auto;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-size:25px;font-weight:900;letter-spacing:.3px}.logo span{color:var(--gold)}
-.links{display:flex;gap:22px;font-weight:700;font-size:14px}.links a:hover{color:var(--gold)}
-.wa{background:#20a85a;color:#fff;padding:11px 18px;border-radius:9px;font-weight:800}
-.hero{background:linear-gradient(120deg,#0d2346 0%,#183b70 65%,#224d88 100%);color:#fff}
-.heroin{max-width:1200px;margin:auto;min-height:440px;padding:70px 5%;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:35px}
-.hero h1{font-size:52px;line-height:1.05;margin:0 0 18px}.hero h1 span{color:#e0ad36}
-.hero p{font-size:18px;line-height:1.7;color:#e9eef8;max-width:650px;margin:0 0 25px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:800}.primary{background:var(--gold);color:#fff}.secondary{background:#fff;color:var(--navy)}
-.heroart{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.heroart img{width:100%;height:175px;object-fit:cover;border-radius:18px;background:#fff;border:4px solid #ffffff22;box-shadow:0 15px 35px #0003}
-.wrap{max-width:1200px;margin:auto;padding:55px 5%}
-.heading{text-align:center;margin-bottom:30px}.heading h2{font-size:32px;margin:0 0 8px}.heading p{margin:0;color:var(--muted)}
-.cats{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin:0 0 30px}.cat{border:1px solid #dfe4ec;background:#fff;padding:9px 15px;border-radius:22px;font-weight:700;color:#4c5668;cursor:pointer}.cat.active,.cat:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.card{background:#fff;border:1px solid #e7eaf0;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #13213d0d;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #13213d18}
-.pic{height:205px;background:#f3f5f8;overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover}
-.body{padding:16px}.tag{font-size:11px;font-weight:900;color:var(--gold);text-transform:uppercase}.body h3{font-size:18px;margin:7px 0}.body p{font-size:13px;line-height:1.5;color:var(--muted);min-height:40px;margin:0 0 14px}
-.order{display:block;text-align:center;background:var(--navy);color:#fff;border-radius:9px;padding:10px;font-size:13px;font-weight:800}.order:hover{background:#1a3a6e}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.feature{background:#fff;border:1px solid #e7eaf0;border-radius:16px;padding:22px;text-align:center}.feature b{display:block;font-size:17px;margin-bottom:6px}.feature span{color:var(--muted);font-size:13px}
-.bulk{background:var(--navy);color:#fff;border-radius:22px;padding:42px 25px;text-align:center;margin-top:45px}.bulk h2{font-size:30px;margin:0 0 10px}.bulk p{color:#dce6f6;line-height:1.6}.bulk .btn{margin-top:8px}
-.contact{background:#fff;border-top:1px solid #e7eaf0}.contactin{max-width:1200px;margin:auto;padding:35px 5%;display:flex;justify-content:space-between;gap:20px;align-items:center}.contact h3{margin:0 0 6px;font-size:22px}.contact p{margin:0;color:var(--muted)}
-footer{background:#091a35;color:#dce5f3;text-align:center;padding:28px 5%;font-size:13px}footer b{color:#fff}
-@media(max-width:900px){.heroin{grid-template-columns:1fr}.heroart{max-width:600px}.grid{grid-template-columns:repeat(2,1fr)}.links{display:none}}
-@media(max-width:560px){.top{font-size:11px}.heroin{padding-top:45px;padding-bottom:45px}.hero h1{font-size:38px}.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}.heroart img{height:145px}.contactin{display:block}.contact .wa{display:inline-block;margin-top:15px}}
+:root{--navy:#0b2348;--blue:#173d78;--gold:#f0ad18;--green:#16a34a;--bg:#f4f6f8;--text:#172033;--muted:#667085;--card:#fff;--line:#e5e7eb}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+a{text-decoration:none;color:inherit} button,input,select{font:inherit}
+.top{background:var(--navy);color:#fff;font-size:13px;padding:7px 5%;display:flex;justify-content:space-between;gap:12px}
+.header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.head{max-width:1250px;margin:auto;padding:12px 18px;display:flex;align-items:center;gap:18px}
+.logo{font-size:25px;font-weight:900;white-space:nowrap}.logo span{color:var(--gold)}
+.search{flex:1;display:flex;background:#f1f3f6;border-radius:7px;overflow:hidden;border:1px solid #ddd}
+.search input{flex:1;border:0;background:transparent;padding:12px 14px;outline:0}.search button{border:0;background:var(--gold);padding:0 20px;font-weight:800;cursor:pointer}
+.head-actions{display:flex;gap:9px;align-items:center}.action{border:0;background:#fff;cursor:pointer;padding:10px;font-weight:700}.cart{background:var(--navy);color:#fff;border-radius:7px}
+.nav{background:var(--navy);color:#fff}.navin{max-width:1250px;margin:auto;padding:0 18px;display:flex;gap:5px;overflow:auto}.nav button{background:transparent;color:#fff;border:0;padding:13px 15px;cursor:pointer;white-space:nowrap}.nav button:hover{background:#173b70}
+.wrap{max-width:1250px;margin:auto;padding:18px}
+.hero{background:linear-gradient(110deg,#0d2a55,#24518e);color:#fff;border-radius:10px;padding:32px;display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:center}
+.hero h1{font-size:42px;margin:0 0 8px}.hero h1 span{color:var(--gold)}.hero p{font-size:17px;line-height:1.6;max-width:650px}.hero .btns{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:7px;padding:12px 18px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#14243e}.secondary{background:#fff;color:var(--navy)}
+.hero-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.hero-box{height:145px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:46px}
+.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:26px 0 14px}.section-head h2{margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid #ddd;background:#fff;border-radius:20px;padding:8px 14px;cursor:pointer}.filter.active{background:var(--navy);color:#fff}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:18px}.sidebar{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px;height:max-content;position:sticky;top:130px}.sidebar h3{margin-top:0}.sidebar label{display:block;margin:12px 0;cursor:pointer}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.pic{aspect-ratio:1/1;background:#f0f2f5;display:flex;align-items:center;justify-content:center;color:#8a93a2;font-size:42px;overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover}.info{padding:13px}.tag{font-size:11px;color:#b47a00;font-weight:900;text-transform:uppercase}.title{font-size:16px;font-weight:800;margin:5px 0}.desc{font-size:12px;color:var(--muted);min-height:34px}.price{font-size:18px;font-weight:900;margin:9px 0}.price small{font-size:11px;color:var(--muted);font-weight:500}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}.add,.order{padding:10px;border-radius:6px;cursor:pointer;font-weight:800}.add{border:1px solid var(--navy);background:#fff;color:var(--navy)}.order{border:0;background:var(--navy);color:#fff}
+.info-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}.strip{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;text-align:center}.strip b{display:block;margin-bottom:5px}
+.bulk{background:var(--navy);color:#fff;border-radius:10px;padding:28px;text-align:center;margin:24px 0}.bulk h2{margin:0 0 7px}.bulk .btn{margin-top:12px}
+footer{background:#071a36;color:#fff;margin-top:35px}.foot{max-width:1250px;margin:auto;padding:28px 18px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.muted{color:#c8d2e2;font-size:13px}
+.drawer{position:fixed;right:0;top:0;height:100%;width:min(420px,94vw);background:#fff;z-index:50;box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(105%);transition:.25s;padding:18px;overflow:auto}.drawer.open{transform:none}.shade{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:40;display:none}.shade.open{display:block}.drawer-head{display:flex;justify-content:space-between;align-items:center}.cart-row{display:grid;grid-template-columns:55px 1fr auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.thumb{width:55px;height:55px;border-radius:6px;background:#eee;object-fit:cover}.qty{display:flex;align-items:center;gap:8px}.qty button{width:30px;height:30px;border:1px solid #ddd;background:#fff;border-radius:5px;cursor:pointer}.checkout{width:100%;background:var(--green);color:#fff;border:0;border-radius:7px;padding:13px;font-weight:900;cursor:pointer}
+.empty{padding:40px;text-align:center;background:#fff;border:1px dashed #ccc;border-radius:10px;grid-column:1/-1}
+@media(max-width:1000px){.products{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.sidebar{position:static}.hero{grid-template-columns:1fr}.hero-grid{max-width:600px}}
+@media(max-width:700px){.top{font-size:11px}.head{flex-wrap:wrap}.search{order:3;flex-basis:100%}.hero{padding:23px}.hero h1{font-size:31px}.hero-box{height:105px}.products{grid-template-columns:repeat(2,1fr)}.info-strip{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:430px){.products{grid-template-columns:1fr 1fr}.card-actions{grid-template-columns:1fr}.head-actions .action:not(.cart){display:none}}
 </style>
 </head>
 <body>
-<div class="top"><b>ADITYA PRINT</b><span>Noorpur, Nahtor Chauraha, Bijnor Road</span><b>📱 9568618658</b></div>
-<header class="nav"><div class="navin">
-<div class="logo">ADITYA <span>PRINT</span></div>
-<div class="links"><a href="#products">Products</a><a href="#bulk">Bulk Orders</a><a href="#contact">Contact</a></div>
-<a class="wa" href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print,%20mujhe%20order%20karna%20hai">WhatsApp</a>
-</div></header>
+<div class="top"><span>ADITYA PRINT</span><span>Noorpur, Nahtor Chauraha, Bijnor Road</span><span>📱 9568618658</span></div>
+<header class="header">
+  <div class="head">
+    <a class="logo" href="#">ADITYA <span>PRINT</span></a>
+    <div class="search"><input id="search" placeholder="Search T-Shirt, Mug, Keychain..."><button id="searchBtn">Search</button></div>
+    <div class="head-actions"><button class="action" id="contactBtn">Contact</button><button class="action cart" id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button></div>
+  </div>
+  <nav class="nav"><div class="navin" id="navCats"></div></nav>
+</header>
 
-<section class="hero"><div class="heroin">
-<div>
-<h1>Apna Design.<br><span>Apna Print.</span></h1>
-<p>T-Shirt, Mug, Keychain, Mouse Pad, Cushion aur professional printing services — personal, business, school aur bulk orders ke liye.</p>
-<div class="cta"><a class="btn primary" href="#products">Products Dekhein</a><a class="btn secondary" href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print,%20mujhe%20quote%20chahiye">Quote Maangein</a></div>
-</div>
-<div class="heroart">
-<img src="assets/01_tshirt.png" alt="Custom T-Shirt"><img src="assets/02_photo_mug.png" alt="Photo Mug">
-<img src="assets/03_custom_keychain.png" alt="Custom Keychain"><img src="assets/06_dtf_printing.png" alt="DTF Printing">
-</div>
-</div></section>
-
-<section class="wrap" id="products">
-<div class="heading"><h2>Products & Services</h2><p>Jo chahiye, design bhejiye — order WhatsApp par kijiye.</p></div>
-<div class="cats">
-<button class="cat active" onclick="filterCards('all',this)">All</button>
-<button class="cat" onclick="filterCards('gift',this)">Gifts</button>
-<button class="cat" onclick="filterCards('wear',this)">T-Shirt</button>
-<button class="cat" onclick="filterCards('print',this)">Printing</button>
-<button class="cat" onclick="filterCards('school',this)">School</button>
-</div>
-<div class="grid">
-<article class="card" data-cat="wear"><div class="pic"><img src="assets/01_tshirt.png" alt="Custom T-Shirt"></div><div class="body"><div class="tag">T-Shirt</div><h3>Custom T-Shirt</h3><p>Name, photo, logo & bulk orders</p><a class="order" href="https://wa.me/919568618658?text=Custom%20T-Shirt%20ka%20order%20chahiye">WhatsApp Order</a></div></article><article class="card" data-cat="gift"><div class="pic"><img src="assets/02_photo_mug.png" alt="Photo Mug"></div><div class="body"><div class="tag">Gift</div><h3>Photo Mug</h3><p>Photo, logo & personalized gifts</p><a class="order" href="https://wa.me/919568618658?text=Photo%20Mug%20ka%20order%20chahiye">WhatsApp Order</a></div></article><article class="card" data-cat="gift"><div class="pic"><img src="assets/03_custom_keychain.png" alt="Custom Keychain"></div><div class="body"><div class="tag">Gift</div><h3>Custom Keychain</h3><p>Name, photo & logo keychains</p><a class="order" href="https://wa.me/919568618658?text=Custom%20Keychain%20ka%20order%20chahiye">WhatsApp Order</a></div></article><article class="card" data-cat="gift"><div class="pic"><img src="assets/04_custom_mousepad.png" alt="Custom Mouse Pad"></div><div class="body"><div class="tag">Gift</div><h3>Custom Mouse Pad</h3><p>Logo, photo & custom design</p><a class="order" href="https://wa.me/919568618658?text=Custom%20Mouse%20Pad%20ka%20order%20chahiye">WhatsApp Order</a></div></article><article class="card" data-cat="gift"><div class="pic"><img src="assets/05_photo_cushion.png" alt="Photo Cushion"></div><div class="body"><div class="tag">Gift</div><h3>Photo Cushion</h3><p>Personalized photo & gift cushion</p><a class="order" href="https://wa.me/919568618658?text=Photo%20Cushion%20ka%20order%20chahiye">WhatsApp Order</a></div></article><article class="card" data-cat="print"><div class="pic"><img src="assets/06_dtf_printing.png" alt="DTF Printing"></div><div class="body"><div class="tag">Printing</div><h3>DTF Printing</h3><p>Garments ke liye transfer printing</p><a class="order" href="https://wa.me/919568618658?text=DTF%20Printing%20ka%20order%20chahiye">WhatsApp Order</a></div></article><article class="card" data-cat="print"><div class="pic"><img src="assets/07_screen_printing.png" alt="Screen Printing"></div><div class="body"><div class="tag">Printing</div><h3>Screen Printing</h3><p>Team, business & bulk orders</p><a class="order" href="https://wa.me/919568618658?text=Screen%20Printing%20ka%20order%20chahiye">WhatsApp Order</a></div></article><article class="card" data-cat="school"><div class="pic"><img src="assets/08_school_uniform.png" alt="School Uniform Printing"></div><div class="body"><div class="tag">School</div><h3>School Uniform Printing</h3><p>Names, logos & school requirements</p><a class="order" href="https://wa.me/919568618658?text=School%20Uniform%20Printing%20ka%20order%20chahiye">WhatsApp Order</a></div></article>
-</div>
-<div class="features">
-<div class="feature"><b>🎨 Custom Design</b><span>Aapka photo, naam ya logo</span></div>
-<div class="feature"><b>📦 Bulk Orders</b><span>Team, school, event & business</span></div>
-<div class="feature"><b>📲 WhatsApp Order</b><span>Design bhejiye, quote lijiye</span></div>
-</div>
-<div class="bulk" id="bulk"><h2>Bulk Order Chahiye?</h2><p>School, sports team, event, business ya group ke liye quantity aur design WhatsApp par bhejiye.</p><a class="btn primary" href="https://wa.me/919568618658?text=Namaste%20Aditya%20Print,%20mujhe%20bulk%20order%20ka%20quote%20chahiye">Bulk Order WhatsApp</a></div>
+<main class="wrap">
+<section class="hero">
+  <div>
+    <h1>Apna Design.<br><span>Apna Print.</span></h1>
+    <p>T-Shirt, Mug, Keychain, Mouse Pad, Cushion aur professional printing services — personal, business, school aur bulk orders ke liye.</p>
+    <div class="btns"><button class="btn primary" id="productsBtn">Products Dekhein</button><button class="btn secondary" id="quoteBtn">Quote Maangein</button></div>
+  </div>
+  <div class="hero-grid"><div class="hero-box">👕</div><div class="hero-box">☕</div><div class="hero-box">🎁</div><div class="hero-box">🖨️</div></div>
 </section>
-<section class="contact" id="contact"><div class="contactin"><div><h3>Aditya Print</h3><p>Noorpur (Nahtor Chauraha), Bijnor Road<br>📱 9568618658</p></div><a class="wa" href="https://wa.me/919568618658">Chat on WhatsApp</a></div></section>
-<footer><b>ADITYA PRINT</b><br>Custom Printing • Noorpur, Bijnor Road</footer>
+
+<div class="section-head"><div><h2>Products & Services</h2><div class="muted">Catalog se product select karein, cart mein add karein ya WhatsApp order karein.</div></div><div class="filters" id="filters"></div></div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>Categories</h3>
+    <div id="sideCats"></div>
+    <hr>
+    <h3>Quick Contact</h3>
+    <p class="muted">WhatsApp: 9568618658</p>
+    <button class="btn primary" style="width:100%" id="sideQuote">Bulk Quote</button>
+  </aside>
+  <section class="products" id="products"></section>
+</div>
+
+<section class="info-strip">
+  <div class="strip"><b>🎨 Custom Design</b><span class="muted">Aapka photo, naam ya logo</span></div>
+  <div class="strip"><b>📦 Bulk Orders</b><span class="muted">Team, school, event & business</span></div>
+  <div class="strip"><b>📱 WhatsApp Order</b><span class="muted">Design bhejiye, quote lijiye</span></div>
+</section>
+
+<section class="bulk"><h2>Bulk Order Chahiye?</h2><div>School, sports team, event, business ya group ke liye quantity aur design WhatsApp par bhejiye.</div><button class="btn primary" id="bulkBtn">Bulk Order WhatsApp</button></section>
+</main>
+
+<footer><div class="foot"><div><b>Aditya Print</b><br><span class="muted">Noorpur (Nahtor Chauraha), Bijnor Road<br>📱 9568618658</span></div><div class="muted">T-Shirt • Mug • DTF • Screen Printing • School Printing</div></div></footer>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head"><h2>Your Cart</h2><button class="action" id="closeCart">✕</button></div>
+  <div id="cartItems"></div>
+  <div id="cartTotal" style="font-size:20px;font-weight:900;margin:18px 0"></div>
+  <button class="checkout" id="checkout">WhatsApp par Order Bhejein</button>
+</aside>
+
+<script src="products.js"></script>
 <script>
-function filterCards(cat,btn){
-document.querySelectorAll('.cat').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
-document.querySelectorAll('.card').forEach(c=>c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none');
+const PHONE="919568618658";
+let cart=[];
+let activeCat="All";
+const $=s=>document.querySelector(s);
+const money=n=>n?`₹${Number(n).toLocaleString("en-IN")}`:"Price on Request";
+
+function wa(text){location.href=`https://wa.me/${PHONE}?text=${encodeURIComponent(text)}`}
+
+function cats(){
+ const all=["All",...new Set(PRODUCTS.map(p=>p.category))];
+ $("#navCats").innerHTML=all.map(c=>`<button data-cat="${c}">${c}</button>`).join("");
+ $("#filters").innerHTML=all.map(c=>`<button class="filter ${c==="All"?"active":""}" data-cat="${c}">${c}</button>`).join("");
+ $("#sideCats").innerHTML=all.map(c=>`<label><input type="radio" name="cat" ${c==="All"?"checked":""} value="${c}"> ${c}</label>`).join("");
+ document.querySelectorAll("[data-cat]").forEach(b=>b.addEventListener("click",()=>{activeCat=b.dataset.cat;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x.dataset.cat===activeCat));document.querySelectorAll('input[name="cat"]').forEach(x=>x.checked=x.value===activeCat);render();}));
+ document.querySelectorAll('input[name="cat"]').forEach(x=>x.addEventListener("change",()=>{activeCat=x.value;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.cat===activeCat));render()}));
 }
+function render(){
+ const q=$("#search").value.trim().toLowerCase();
+ const list=PRODUCTS.filter(p=>(activeCat==="All"||p.category===activeCat)&&(!q||(p.name+" "+p.category+" "+p.description).toLowerCase().includes(q)));
+ $("#products").innerHTML=list.length?list.map(p=>`
+ <article class="card">
+  <div class="pic">${p.image?`<img src="${p.image}" alt="${p.name}">`:`${p.icon||"🖨️"}`}</div>
+  <div class="info"><div class="tag">${p.category}</div><div class="title">${p.name}</div><div class="desc">${p.description}</div>
+  <div class="price">${money(p.price)} <small>${p.price?"":"custom quote"}</small></div>
+  <div class="card-actions"><button class="add" data-add="${p.id}">Add to Cart</button><button class="order" data-order="${p.id}">WhatsApp</button></div></div>
+ </article>`).join(""):`<div class="empty">Is category/search mein product nahi mila.</div>`;
+ document.querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>add(Number(b.dataset.add))));
+ document.querySelectorAll("[data-order]").forEach(b=>b.addEventListener("click",()=>{const p=PRODUCTS.find(x=>x.id===Number(b.dataset.order));wa(`Namaste Aditya Print, mujhe ${p.name} ke baare mein order/price chahiye.`)}));
+}
+function add(id){const p=PRODUCTS.find(x=>x.id===id);const old=cart.find(x=>x.id===id);old?old.qty++:cart.push({...p,qty:1});updateCart();openCart()}
+function updateCart(){ $("#cartCount").textContent=cart.reduce((s,x)=>s+x.qty,0); $("#cartItems").innerHTML=cart.length?cart.map((p,i)=>`<div class="cart-row"><div class="thumb" style="display:flex;align-items:center;justify-content:center">${p.icon||"🖨️"}</div><div><b>${p.name}</b><div class="muted">${money(p.price)}</div><div class="qty"><button data-dec="${i}">−</button>${p.qty}<button data-inc="${i}">+</button></div></div><button class="action" data-del="${i}">🗑️</button></div>`).join(""):`<p class="muted">Cart abhi khaali hai.</p>`; const total=cart.reduce((s,x)=>s+(Number(x.price)||0)*x.qty,0); $("#cartTotal").textContent=total?`Total: ${money(total)}`:"";document.querySelectorAll("[data-inc]").forEach(b=>b.onclick=()=>{cart[+b.dataset.inc].qty++;updateCart()});document.querySelectorAll("[data-dec]").forEach(b=>b.onclick=()=>{let x=cart[+b.dataset.dec];x.qty--;if(x.qty<=0)cart.splice(+b.dataset.dec,1);updateCart()});document.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{cart.splice(+b.dataset.del,1);updateCart()})}
+function openCart(){$("#drawer").classList.add("open");$("#shade").classList.add("open")} function closeCart(){$("#drawer").classList.remove("open");$("#shade").classList.remove("open")}
+$("#searchBtn").onclick=render;$("#search").addEventListener("input",render);$("#cartBtn").onclick=openCart;$("#closeCart").onclick=closeCart;$("#shade").onclick=closeCart;
+$("#productsBtn").onclick=()=>document.querySelector(".section-head").scrollIntoView({behavior:"smooth"});
+function quote(){wa("Namaste Aditya Print, mujhe bulk/custom printing ka quotation chahiye.")}
+$("#quoteBtn").onclick=quote;$("#sideQuote").onclick=quote;$("#bulkBtn").onclick=quote;$("#contactBtn").onclick=()=>wa("Namaste Aditya Print, mujhe aapki services ke baare mein jaankari chahiye.");
+$("#checkout").onclick=()=>{if(!cart.length)return;let lines=cart.map(x=>`${x.name} x ${x.qty}`).join("\n");wa(`Namaste Aditya Print,\nMujhe ye order chahiye:\n${lines}\n\nKripya price aur delivery/collection details batayein.`)}
+cats();render();updateCart();
 </script>
-</body></html>
+</body>
+</html>
